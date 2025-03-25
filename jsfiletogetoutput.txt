@@ -1,0 +1,6 @@
+   
+ const outputs = document.querySelectorAll('.case-output');
+ const outputNumbers = Array.from(outputs).map(output =>(output.innerText.split('\n')));
+const textOutput = outputNumbers.join("'],['");
+
+textOutput ;

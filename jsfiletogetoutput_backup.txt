@@ -1,0 +1,22 @@
+const items=document.querySelectorAll('.case-row.toggle.closed')
+for (var i = 0; i < items.length; i++) {items[i].click()}
+const outputs = document.querySelectorAll('.case-output');
+ const outputNumbers = Array.from(outputs).map(output =>(output.innerText));
+var textOutput ="['"+ outputNumbers.join("'],['") +"']";
+textOutput='['+textOutput.replaceAll("\n'","'")+']'
+
+
+textOutput=textOutput.replaceAll(",['1 token(s)']","")
+textOutput=textOutput.replaceAll(",['2 token(s)']","")
+textOutput=textOutput.replaceAll(",['3 token(s)']","")
+textOutput=textOutput.replaceAll(",['4 token(s)']","")
+textOutput=textOutput.replaceAll(",['5 token(s)']","")
+textOutput=textOutput.replaceAll(",['6 token(s)']","")
+textOutput=textOutput.replaceAll(",['7 token(s)']","")
+textOutput=textOutput.replaceAll(",['8 token(s)']","")
+
+for (var i=1;i<100000;i++){
+ var replitoken=",['"+i+" token(s)']";
+ textOutput=textOutput.replaceAll(replitoken,"")
+ };
+textOutput;
