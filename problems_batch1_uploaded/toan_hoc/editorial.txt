@@ -1,0 +1,39 @@
+```
+s = input().strip()
+
+parts = s.split('+')      # tách thành list các số dạng chuỗi
+parts.sort()              # vì chỉ có '1','2','3' nên sort trực tiếp được
+
+print('+'.join(parts))    # ghép lại bằng dấu '+'
+
+```
+
+
+Cách khác:
+
+
+
+```
+s = input().strip()
+
+# đếm số lần xuất hiện của 1, 2, 3
+cnt1 = s.count('1')
+cnt2 = s.count('2')
+cnt3 = s.count('3')
+
+ans = []
+
+# thêm các số 1
+for _ in range(cnt1):
+    ans.append('1')
+
+# thêm các số 2
+for _ in range(cnt2):
+    ans.append('2')
+
+# thêm các số 3
+for _ in range(cnt3):
+    ans.append('3')
+
+print('+'.join(ans))
+```

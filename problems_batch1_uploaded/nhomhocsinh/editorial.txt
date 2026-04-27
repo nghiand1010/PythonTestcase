@@ -1,0 +1,23 @@
+```
+def solve():
+    n = int(input().strip())
+    a = list(map(int, input().split()))
+
+    dem = {}
+    for h in a:
+        dem[h] = dem.get(h, 0) + 1
+
+    drama = 0
+    for h in dem:
+        if dem[h] == 1:
+            drama += 1
+
+    for h in sorted(dem):
+        if dem[h] >= 2:
+            print(h, dem[h])
+
+    print(drama)
+
+solve()
+
+```

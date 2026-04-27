@@ -1,0 +1,12 @@
+{
+  "id": "tica_tht24tka4",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_tht24tka4",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_tht24tka4/edit",
+  "constraints": [
+    "A≤1000000000000000000",
+    "B≤1000000000000000000",
+    "(C<B)"
+  ],
+  "has_editorial": true
+}

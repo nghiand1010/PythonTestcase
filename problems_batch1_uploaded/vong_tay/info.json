@@ -1,0 +1,15 @@
+{
+  "id": "vong_tay",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/vong_tay",
+  "edit_url": "https://oj.tica.edu.vn/problem/vong_tay/edit",
+  "constraints": [
+    "1 ≤ N ≤ 100",
+    "1 ≤ a_i ≤ 9",
+    "N ≤ 100",
+    "a_i ≤ 9",
+    "(1 ≤ N ≤ 100)",
+    "(1 ≤ a_i ≤ 9)"
+  ],
+  "has_editorial": true
+}

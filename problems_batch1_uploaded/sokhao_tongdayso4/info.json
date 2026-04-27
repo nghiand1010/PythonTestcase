@@ -1,0 +1,12 @@
+{
+  "id": "sokhao_tongdayso4",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sokhao_tongdayso4",
+  "edit_url": "https://oj.tica.edu.vn/problem/sokhao_tongdayso4/edit",
+  "constraints": [
+    "R ≤ 10^8",
+    "R ≤ 10^5",
+    "(`1 ≤ L ≤ R ≤ 10^8`)"
+  ],
+  "has_editorial": false
+}

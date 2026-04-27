@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_git6
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+def is_lucky_divisor(N):
+    # Danh sách các số may mắn nhỏ hơn hoặc bằng 1000
+    lucky_numbers = []
+    for i in range(1, 1001):
+        if all(c in '47' for c in str(i)):
+            lucky_numbers.append(i)
+    
+    # Kiểm tra nếu N chia hết cho bất kỳ số may mắn nào
+    for lucky in lucky_numbers:
+        if N % lucky == 0:
+            return "YES"
+    return "NO"
+
+# Đọc input
+N = int(input())
+print(is_lucky_divisor(N))

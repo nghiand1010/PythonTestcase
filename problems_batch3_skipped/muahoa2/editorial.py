@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for muahoa2
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+def solve(a, b, c):
+    mv = 0
+    for y in range(c // b + 1):
+        x = (c - b * y) // a
+        v = a * x + b * y
+        if v > mv:
+            mv = v
+    return mv
+
+
+a, b, c = map(int, input().split())
+print(solve(a, b, c))

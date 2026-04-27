@@ -1,0 +1,8 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tica_timso_vt24
+
+---
+
+![](/martor/edbc3ca2-cde4-4543-90bd-2036d542217f.png)
+![](/martor/0a22340e-8dad-4309-9718-67c68df6e5e9.png)

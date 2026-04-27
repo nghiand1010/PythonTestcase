@@ -1,0 +1,15 @@
+{
+  "id": "sodongxu",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sodongxu",
+  "edit_url": "https://oj.tica.edu.vn/problem/sodongxu/edit",
+  "constraints": [
+    "2 ≤ N ≤ 100",
+    "1 ≤ a_i ≤ 20",
+    "N ≤ 100",
+    "a_i ≤ 20",
+    "(~2 ≤ N ≤ 100~)",
+    "(~1 ≤ a_i ≤ 20~)"
+  ],
+  "has_editorial": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nhomhocsinh",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/nhomhocsinh",
+  "edit_url": "https://oj.tica.edu.vn/problem/nhomhocsinh/edit",
+  "constraints": [
+    "1 ≤ n ≤ 10^5",
+    "1 ≤ hi ≤ 10^9",
+    "n ≤ 10^5",
+    "hi ≤ 10^9",
+    "(không trùng với bất kỳ học sinh nào khác)",
+    "(1 ≤ n ≤ 10^5)",
+    "(1 ≤ hi ≤ 10^9)"
+  ],
+  "has_editorial": true
+}

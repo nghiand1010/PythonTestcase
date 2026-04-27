@@ -1,0 +1,952 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Editing data for Mua Hàng - Quảng Nam - TICA OJ:TICA Online Judge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#231F20">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#231F20">
+        <meta property="og:image" content="https://oj.tica.edu.vn/logo.png">
+    <meta property="og:site_name" content="TICA OJ:TICA Online Judge">
+    <meta property="og:url" content="https://oj.vnoi.info/problem/muahang_qnam/test_data">
+
+<link rel="stylesheet" href="/static/cache/css/output.4e1e16d6dad0.css" type="text/css" media="(prefers-color-scheme: light)"><link rel="stylesheet" href="/static/cache/css/output.9e7634a7e06f.css" type="text/css" media="(prefers-color-scheme: dark)"><link rel="stylesheet" href="/static/cache/css/output.bff4773c4975.css" type="text/css">    <link rel="canonical" href="https://oj.vnoi.info/problem/muahang_qnam/test_data">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" type="text/css" media="screen" rel="stylesheet">
+    <style>
+        #case-table .select2 {
+            text-align: initial;
+        }
+
+        .order-column {
+            width: 1em;
+        }
+
+        .bad-file input, .bad-file .select2-selection {
+            border-color: red;
+        }
+
+        span.order {
+            padding-right: 0.5em;
+        }
+
+        body.dragging, body.dragging * {
+            cursor: move !important;
+        }
+
+        .dragged {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 2000;
+        }
+
+        tr.placeholder {
+            display: block;
+            background: red;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        tr.placeholder:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-left-color: red;
+            margin-top: -5px;
+            left: -5px;
+            border-right: none;
+        }
+
+        i.fa-ellipsis-v {
+            cursor: move;
+        }
+
+        .edit-generator-args {
+            position: relative;
+        }
+
+        .generator-args-editor textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5em;
+            height: 8em;
+        }
+
+        .generator-args-editor #submit-button {
+            display: block;
+            float: right;
+        }
+
+        #case-table tbody td {
+            white-space: nowrap;
+        }
+
+        .type-column {
+            width: 8em;
+        }
+
+        ul.errorlist {
+            border: 3px red solid;
+            border-radius: 5px;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            background: #e99;
+        }
+    </style>
+
+<script src="https://connect.facebook.net/signals/config/3854179708000474?v=2.9.308&amp;r=stable&amp;domain=oj.tica.edu.vn&amp;hme=97937018cefade17726f0472876fc101316b2ce9008a35a6a5a7977d7436151a&amp;ex_m=104%2C205%2C154%2C22%2C72%2C73%2C145%2C68%2C67%2C11%2C162%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C159%2C164%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C165%2C170%2C219%2C62%2C186%2C187%2C55%2C276%2C30%2C74%2C231%2C230%2C229%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C155%2C76%2C158%2C156%2C157%2C50%2C60%2C123%2C15%2C161%2C45%2C263%2C264%2C262%2C26%2C27%2C28%2C48%2C146%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C144%2C147%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C149%2C148%2C150%2C141%2C139%2C25%2C35%2C59%2C109%2C160%2C70%2C17%2C152%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C34%2C278%2C293%2C212%2C201%2C202%2C200%2C296%2C288%2C52%2C213%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C58%2C64%2C151%2C115%2C37%2C32%2C53%2C56%2C100%2C163%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C166%2C167%2C94%2C95%2C9%2C125%2C102%2C51%2C142%2C87%2C79%2C71%2C117%2C106%2C43%2C143%2C0%2C82%2C137%2C140%2C153%2C38%2C108%2C13%2C168" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/static/cache/js/output.cdb3460466a3.js"></script>    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="/static/django_select2.dbe36f3d940d.js"></script>
+<script src="/static/vnoj/jquery.dirty.min.fc7bf3d0e119.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('form').dirty({
+            preventLeaving: true,
+            leavingMessage: 'Changes you made may not be saved.',
+        });
+    });
+</script>    <script type="text/javascript" src="/static/libs/jquery-sortable.9d207249f39a.js"></script>
+    <script type="text/javascript" src="/static/libs/featherlight/featherlight.min.a0e732b080f0.js"></script>
+    <script type="text/javascript" src="/static/vnoj/jszip/jszip.min.d760c7452531.js"></script>
+    <script type="text/javascript">
+        window.valid_files = [].sort();
+        window.testcase_limit = 9999;
+        window.testcase_soft_limit = 9999;
+
+        $(function () {
+            function autofill_if_exists($select, file) {
+                if (!$select.val() && ~window.valid_files.indexOf(file))
+                    $select.append(new Option(file, file, true, true)).change();
+            }
+
+            var valid_files_options = window.valid_files.map(function (file) {
+                return {id: file, text: file};
+            });
+
+            var select2_settings = {
+                theme: 'dmoj',
+                ajax: {
+                    transport: function (params, success) {
+                        success({results: valid_files_options});
+                    },
+                },
+                allowClear: true,
+                placeholder: ''
+            };
+
+            var $table = $('#case-table');
+            $table.on('add-row', function (e, $tr) {
+                $tr.find('input').filter('[id$=file]').each(function () {
+                    var $select, val = $(this).replaceWith($select = $('<select>').attr({
+                        id: $(this).attr('id'),
+                        name: $(this).attr('name'),
+                        style: 'width: 100%'
+                    })).val();
+                    var option = new Option(val, val, true, true);
+                    $select.select2(select2_settings).append(option).change().on('change', function () {
+                        var val = $select.val();
+                        if (val) {
+                            if ($select.attr('id').endsWith('input_file'))
+                                autofill_if_exists($tr.find('select[id$=output_file]'), val.replace(/in(?!.*?in)/, 'out'));
+                            else
+                                autofill_if_exists($tr.find('select[id$=input_file]'), val.replace(/out(?!.*?out)/, 'in'));
+                        }
+                    });
+                });
+            });
+
+            var order = 0;
+
+            function handle_table_reorder() {
+                var in_batch = false;
+                $table.find('tbody:first tr').each(function () {
+                    switch ($(this).attr('data-type')) {
+                        case 'C':
+                            $(this).find('input[id$=points], input[id$=pretest]').toggle(!in_batch);
+                            break;
+                        case 'S':
+                            in_batch = true;
+                            break;
+                        case 'E':
+                            in_batch = false;
+                    }
+                });
+            }
+
+            function try_parse_json(json) {
+                try {
+                    return JSON.parse(json);
+                } catch (e) {
+                    return {};
+                }
+            }
+
+            var $checker = $('#id_problem-data-checker');
+            var $args = $('#id_problem-data-checker_args');
+
+            var $custom_checker_file = $('#id_problem-data-custom_checker');
+            var $custom_checker_type = $('#id_problem-data-checker_type');
+            var $tr_custom_checker_file = $custom_checker_file.parent().parent();
+            var $tr_custom_checker_type = $custom_checker_type.parent().parent();
+            var init = true;
+
+            (function checker_args_auto_fill() {
+                // auto fill for float checker
+                var $td = $checker.parent();
+                var $precision = $('<input>', {
+                    type: 'number',
+                    value: try_parse_json($args.val()).precision || 6,
+                    title: 'precision (decimal digits)',
+                    style: 'width: 4em'
+                }).change(function () {
+                    if ($checker.val().startsWith('floats'))
+                        $args.val(JSON.stringify({precision: parseInt($(this).val())}));
+                }).appendTo($td);
+
+                // auto fill for custom checker
+                $custom_checker_file.change(function () {
+                    if ($checker.val() === 'bridged' && !init) {
+                        $file_name = $custom_checker_file.val().split('\\').pop();
+                        // Handle case that the current file is null but we have a file in database
+                        $old_file = $custom_checker_file.parent().find('a')[0];
+                        if ($old_file && $file_name == '') {
+                            $file_name = $old_file.innerText;
+                        }
+                        if (!($file_name == '')) {
+                            $file_name = $file_name.split('/').pop()
+                            $file_ext = $file_name.split('.').pop()
+                            if (!(['cpp', 'pas', 'java'].includes($file_ext))) {
+                                alert("Expected checker&#x27;s extension must be in [cpp, pas, java], found '" + $file_ext + "'");
+                            }
+                            else {
+                                $lang = $file_ext.toUpperCase();
+                                if ($lang == "CPP") $lang = "CPP17";
+                                if ($lang == "JAVA") $lang = "JAVA8";
+                                $args.val(JSON.stringify({files: $file_name, lang: $lang, type: $custom_checker_type.find(":selected").val()}));
+                                if ($lang == "PY")
+                                    $args.val('');
+                            }
+                        }
+                    }
+                });
+
+                $custom_checker_type.change(function() {
+                    if (!$args.val() || init)
+                        return;
+                    var old_args = try_parse_json($args.val());
+                    if ("type" in old_args) {
+                        old_args["type"] = $custom_checker_type.find(":selected").val();
+                    }
+                    $args.val(JSON.stringify(old_args));
+                });
+
+                if (init && $args.val()) {
+                    var old_args = try_parse_json($args.val());
+                    if ("type" in old_args)
+                        $custom_checker_type.val(old_args["type"]);
+                }
+
+                $checker.change(function () {
+                    $custom_checker_file.toggle($checker.val() === 'bridged').change();
+                    $custom_checker_type.toggle($checker.val() === 'bridged').change();
+                    $tr_custom_checker_file.toggle($checker.val() === 'bridged');
+                    $tr_custom_checker_type.toggle($checker.val() === 'bridged');
+                    $precision.toggle($checker.val().startsWith('floats')).change();
+                    if (!($checker.val() === 'bridged' || $checker.val().startsWith('floats')))
+                        $args.val('');
+                    init = false;
+                }).change();
+            })();
+
+            var $grader = $('#id_problem-data-grader');
+            var $io_method = $('#id_problem-data-io_method');
+            var $io_input_file = $('#id_problem-data-io_input_file');
+            var $io_output_file = $('#id_problem-data-io_output_file');
+            var $custom_grader_file = $('#id_problem-data-custom_grader');
+            var $custom_header_file = $('#id_problem-data-custom_header');
+            var $grader_args = $('#id_problem-data-grader_args');
+
+            var $tr_io_method = $io_method.parent().parent();
+            var $tr_io_input_file = $io_input_file.parent().parent();
+            var $tr_io_output_file = $io_output_file.parent().parent();
+            var $tr_custom_grader_file = $custom_grader_file.parent().parent();
+            var $tr_custom_header_file = $custom_header_file.parent().parent();
+            var $tr_grader_args = $grader_args.parent().parent();
+
+            function clean_io_method() {
+                var old_args = try_parse_json($grader_args.val());
+                delete old_args.io_method;
+                delete old_args.io_input_file;
+                delete old_args.io_output_file;
+                $grader_args.val(JSON.stringify(old_args));
+            }
+
+            $grader.change(function () {
+                var grader = $grader.val();
+                var standard_grader = grader === 'standard';
+                var signature_grader = grader === 'signature';
+                var output_only = grader === 'output_only';
+                var standard_io = $io_method.val() === 'standard';
+
+                if (!standard_grader) {
+                    clean_io_method();
+                }
+
+                $tr_io_method.toggle(standard_grader);
+                $tr_io_input_file.toggle(standard_grader && !standard_io);
+                $tr_io_output_file.toggle(standard_grader && !standard_io);
+                $tr_custom_grader_file.toggle(!standard_grader && !output_only && !!grader);
+                $tr_custom_header_file.toggle(signature_grader);
+                $tr_grader_args.toggle(signature_grader);
+            }).change();
+
+            $io_method.change(function () {
+                var standard_io = $io_method.val() === 'standard';
+                $tr_io_input_file.toggle(!standard_io);
+                $tr_io_output_file.toggle(!standard_io);
+
+                if (standard_io) {
+                    clean_io_method();
+                } else {
+                    var old_args = try_parse_json($grader_args.val());
+                    old_args['io_method'] = $io_method.val();
+                    $grader_args.val(JSON.stringify(old_args));
+                }
+            });
+
+            $io_input_file.change(function () {
+                var old_args = try_parse_json($grader_args.val());
+                old_args['io_input_file'] = $io_input_file.val();
+                $grader_args.val(JSON.stringify(old_args));
+            });
+
+            $io_output_file.change(function () {
+                var old_args = try_parse_json($grader_args.val());
+                old_args['io_output_file'] = $io_output_file.val();
+                $grader_args.val(JSON.stringify(old_args));
+            });
+
+            if ($grader.val() === 'standard') {
+                $io_method.val(try_parse_json($grader_args.val()).io_method || 'standard').change();
+                if ($io_method.val() === 'file') {
+                    $io_input_file.val(try_parse_json($grader_args.val()).io_input_file || '').change();
+                    $io_output_file.val(try_parse_json($grader_args.val()).io_output_file || '').change();
+                }
+            }
+
+            $td = $checker.parent();
+            var $sample = $("<a/>",{
+                text: "Instruction",
+                style: "margin-left:3em;",
+                target: "_blank",
+                href: "/custom_checkers"
+            }).appendTo($td);
+
+            var $file_test = $('#id_problem-data-zipfile');
+            $("<br>").appendTo($file_test.parent());
+            $("<input/>", {
+                type: "submit",
+                value: "Please press this button if you have just updated the zip data",
+                class: "button",
+                style: "display: inherit",
+                id: "submit-button",
+            }).appendTo($file_test.parent());
+
+            function swap_row($a, $b) {
+                var $a_order = $a.find('input[id$=order]'), $b_order = $b.find('input[id$=order]');
+                var order = $a_order.val();
+                $a_order.val($b_order.val());
+                $b_order.val(order);
+                $b.after($a);
+                $a.find('span.order').text($a_order.val());
+                $b.find('span.order').text($b_order.val());
+                handle_table_reorder();
+            }
+
+            $table.on('add-row', function (e, $tr) {
+                var $order = $tr.find('input').filter('[id$=order]').attr('type', 'hidden').val(++order);
+                $order.after($('<span>', {'class': 'order'}).text($order.val()))
+                    .after($('<i>', {'class': 'fa fa-fw fa-lg fa-ellipsis-v'}));
+
+                var $opts = $tr.find('input').slice(2, 6);
+                var $files = $tr.find('select').slice(1, 3);
+                var $checker = $files.end().last();
+                $tr.find('select[id$=type]').change(function () {
+                    var $this = $(this), val = $this.val(), disabled;
+                    switch (val) {
+                        case 'S':
+                        case 'E':
+                            disabled = val == 'S';
+                            $opts.toggle(val == 'S');
+                            $files.siblings('.select2').hide();
+                            $checker.toggle(val == 'S');
+                            break;
+                        default:
+                            $opts.toggle(val == 'C');
+                            $files.siblings('.select2').toggle(val == 'C');
+                            $checker.toggle(val == 'C');
+                            var $prevs = $tr.prevAll('tr[data-type=S], tr[data-type=E]');
+                            disabled = $prevs.length && $prevs.get(0).getAttribute('data-type') == 'S';
+                            $tr.find('input[id$=points], input[id$=pretest]').toggle(val == 'C' && !disabled);
+                    }
+                    $tr.attr('data-type', val).nextUntil('tr[data-type=S], tr[data-type=E], tr[data-type=""]')
+                        .find('input[id$=points], input[id$=pretest]').toggle(!disabled);
+                }).change();
+
+                var tooltip_classes = 'tooltipped tooltipped-s';
+                $tr.find('a.edit-generator-args').mouseover(function () {
+                    switch ($tr.attr('data-type')) {
+                        case 'C':
+                        case 'S':
+                            var $this = $(this).addClass(tooltip_classes);
+                            $this.attr('aria-label', $this.prev().val() || '(none)');
+                    }
+                }).mouseout(function () {
+                    $(this).removeClass(tooltip_classes).removeAttr('aria-label');
+                }).featherlight($('.generator-args-editor'), {
+                    beforeOpen: function () {
+                        switch ($tr.attr('data-type')) {
+                            case 'C':
+                            case 'S':
+                                return true;
+                            default:
+                                return false;
+                        }
+                    },
+                    afterOpen: function () {
+                        var $input = this.$currentTarget.prev();
+                        this.$instance.find('.generator-args-editor')
+                            .find('textarea').val($input.val()).end()
+                            .find('.button').click(function () {
+                            $input.val($(this).prev().val());
+                            $.featherlight.current().close();
+                        }).end()
+                            .show();
+                    }
+                });
+            }).find('tbody:first').find('tr').each(function () {
+                $table.trigger('add-row', [$(this)]);
+            });
+
+            $('form').submit(function () {
+                $table.find('tbody:first').find('tr').each(function () {
+                    var filled = false;
+                    $(this).find('input, select').each(function () {
+                        var $this = $(this);
+                        if (!$this.attr('name'))
+                            return;
+                        if ($this.attr('type') === 'checkbox')
+                            filled |= $this.is(':checked');
+                        else if (!$this.attr('name').endsWith('order'))
+                            filled |= !!$this.val();
+                    });
+                    if (!filled)
+                        $(this).find('input[id$=order]').val('');
+                });
+
+                // Check all hidden "Clear" checkboxes
+                // so the corresponding files are cleaned up automatically by django-cleanup
+                $(':checkbox').filter(function() { return this.id.endsWith('clear_id') }).each(function () {
+                    if ($(this).parent().is(':hidden')) {
+                        $(this).attr('checked', true);
+                    }
+                });
+            });
+
+            var $total = $('#id_cases-TOTAL_FORMS');
+            var alerted = false;
+
+            $('a#add-case-row').click(function () {
+                total = parseInt($total.val());
+                if (total >= window.testcase_soft_limit) {
+                    if (!alerted) {
+                        s = `You are about to create more than ${testcase_soft_limit} testcases.`;
+                        s += "\nPlease do not create too many testcases if not really necessary.";
+                        alert(s);
+                        alerted = true;
+                    }
+                }
+                if (total >= window.testcase_limit) {
+                    s = `Too many testcases: ${total}`;
+                    s += '\n';
+                    s += `Number of testcases must not exceed ${window.testcase_limit}`;
+                    alert(s);
+                    return true;
+                }
+                var $tr;
+                $table.find('tbody:first').append($tr = $($table.find('.extra-row-body').html()
+                    .replace(/__prefix__/g, $total.val())));
+                $tr.find('.type-column select option[value="C"]').attr('selected', true);
+                $total.val(parseInt($total.val()) + 1);
+                $table.trigger('add-row', [$tr]);
+                return false;
+            });
+
+            function reordering_row(oldIndex, newIndex, $item) {
+                if (newIndex > oldIndex) {
+                    var order = parseInt($item.parent().children().slice(oldIndex, newIndex).each(function () {
+                        var $order = $(this).find('input[id$=order]');
+                        $order.val(parseInt($order.val()) - 1).siblings('span.order').text($order.val());
+                    }).last().after($item).find('input[id$=order]').val());
+                    $item.find('input[id$=order]').val(order + 1).siblings('span.order').text(order + 1);
+                } else if (newIndex < oldIndex) {
+                    var order = parseInt($item.parent().children().slice(newIndex + 1, oldIndex + 1).each(function () {
+                        var $order = $(this).find('input[id$=order]');
+                        $order.val(parseInt($order.val()) + 1).siblings('span.order').text($order.val());
+                    }).first().before($item).find('input[id$=order]').val());
+                    $item.find('input[id$=order]').val(order - 1).siblings('span.order').text(order - 1);
+                }
+                if (newIndex != oldIndex)
+                    handle_table_reorder();
+            };
+
+            $('a#add-case-first-row').click(function () {
+                var cntRow = parseInt($total.val());
+                $('a#add-case-row').click();
+                if (cntRow == parseInt($total.val()))
+                    return false;
+                var newIndex = -1;
+                var oldIndex = parseInt($total.val()) - 1;
+                $item = $($table.find('tbody:first').children()[oldIndex]);
+                reordering_row(oldIndex, newIndex, $item);
+                return false;
+            });
+
+            $('#case-table tbody').on("click", ".add-case-row-below", function (event) {
+                var cntRow = parseInt($total.val());
+                $('a#add-case-row').click();
+                if (cntRow == parseInt($total.val()))
+                    return false;
+                var $current_row = $(this).parent().parent();
+                var newIndex = parseInt($current_row.find('input[id$=order]').val()) - 1;
+                var oldIndex = parseInt($total.val()) - 1;
+                $item = $($current_row.parent().children()[oldIndex]);
+                reordering_row(oldIndex, newIndex, $item);
+                return false;
+            });
+
+            function fill_testcases() {
+                console.log("Filling testcase...");
+                var inFiles = [], outFiles = [];
+                var input_re = new RegExp(/^(?=.*?\.in|in).*?(?:(?:^|\W)(\d+)[^\d\s]+)?(\d+)[^\d\s]*$/);
+                var output_re = new RegExp(/^(?=.*?\.out|.*?\.ok|.*?\.ans|out|ok|ans).*?(?:(?:^|\W)(\d+)[^\d\s]+)?(\d+)[^\d\s]*$/);
+                for (var i = 0; i < window.valid_files.length; i++) {
+                    if (input_re.test(window.valid_files[i].toLowerCase().replace('/', '.'))) {
+                        inFiles.push(window.valid_files[i]);
+                    }
+                    if (output_re.test(window.valid_files[i].toLowerCase().replace('/', '.'))) {
+                        outFiles.push(window.valid_files[i]);
+                    }
+                }
+                if (inFiles.length == 0) {
+                    alert("No input/output files. Make sure your files are following themis/cms test format");
+                    return false;
+                }
+                if (inFiles.length != outFiles.length) {
+                    s = `The number of input files (${inFiles.length}) do not match the number of output files (${outFiles.length})!`
+                    s = s + `Input: ${inFiles}\n=====================\n`
+                    s = s + `Output: ${outFiles}\n`
+                    alert(s);
+                    return false;
+                }
+                n_test = Math.min(inFiles.length, window.testcase_limit);
+                // add boxes
+                while ($total.val() < n_test) {
+                    $('a#add-case-row').click();
+                }
+                // natsort
+                var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+                inFiles.sort(collator.compare);
+                outFiles.sort(collator.compare);
+                // fill cases
+                for (var i = 0; i < n_test; i++) {
+                    $("#id_cases-" + i + "-input_file").append(new Option(inFiles[i], inFiles[i], true, true)).change();
+                    $("#id_cases-" + i + "-output_file").append(new Option(outFiles[i], outFiles[i], true, true)).change();
+                    $("#id_cases-" + i + "-points").val("1").change();
+                }
+                $("#fill-test-case-noti").show();
+                if (inFiles.length > window.testcase_limit) {
+                    s = `Too many testcases: ${inFiles.length}`;
+                    s += '\n';
+                    s += `Number of testcases must not exceed ${window.testcase_limit}`;
+                    s += '\n';
+                    s += `Because of that, only the first ${window.testcase_limit} testcases will be saved!`
+                    alert(s);
+                }
+                return false;
+            };
+
+            var oldIndex;
+            $table.sortable({
+                containerSelector: 'table',
+                itemPath: '> tbody:first',
+                itemSelector: 'tr',
+                handle: 'i.fa-ellipsis-v',
+                placeholder: '<tr class="placeholder">',
+                onDragStart: function ($item, container, _super) {
+                    oldIndex = $item.index();
+                    _super($item, container);
+                },
+                onDrop: function ($item, container, _super) {
+                    var newIndex = $item.index();
+                    reordering_row(oldIndex, newIndex, $item);
+                    _super($item, container);
+                }
+            });
+
+            $('input#delete-all').change(function() {
+                if (this.checked) {
+                    $("input[name$='DELETE']").attr('checked', true);
+                }
+                else {
+                    $("input[name$='DELETE']").attr('checked', false);
+                }
+            });
+            $('#problem-data-zipfile-clear_id').change(function(){
+                if (this.checked) {
+                    $('input#delete-all').attr('checked', true);
+                }
+                else {
+                    $('input#delete-all').attr('checked', false);
+                }
+                $('input#delete-all').change();
+            });
+            if (parseInt($total.val()) == 0 && window.valid_files.length) {
+                fill_testcases();
+            }
+
+            $("#id_problem-data-zipfile").change((event) => {
+                let fileInput = event.target.files[0];
+                var reader = new FileReader();
+                reader.onload = function(ev) {
+                    JSZip.loadAsync(ev.target.result).then(function(zip) {
+                        window.valid_files = Object.keys(zip.files).sort();
+                        fill_testcases();
+                    }).catch(function(err) {
+                        console.log(err);
+                        console.error("Failed to open as ZIP file");
+                        alert("Test file must be a ZIP file");
+                        event.target.value = "";
+                    })
+                };
+                reader.readAsArrayBuffer(fileInput);
+            })
+            $('form').dirty('setAsClean');
+        }).change();
+    </script>
+        <script>
+            window.event_dispatcher = new WSEventDispatcher(
+                'wss://oj.tica.edu.vn/event/',
+                '/channels/',
+                1777036603673
+            );
+        </script>
+
+        <script>
+            window.user = {
+                email: 'thinh.bcvt@gmail.com',
+                id: '7',
+                name: 'thinhdt'
+            };
+        </script>
+
+
+    <script>
+        function submmit_language(lang) {
+            if (lang != "en" ) {
+                $("input[name=language]").val(lang)
+                $("#set_language").submit()
+            }
+        }
+    </script>
+    <noscript>
+        <style>
+            #content {
+                margin: 80px auto auto;
+            }
+
+            #navigation {
+                top: 27px;
+            }
+        </style>
+    </noscript>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3854179708000474');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3854179708000474&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</head>
+<body class="window-visible">
+    <script>
+        fbq('track', 'ViewContent');
+    </script>
+<svg width="0" height="0" style="display: block">
+    <defs>
+        <clipPath id="rating-clip"><circle cx="8" cy="8" r="7"></circle></clipPath>
+    </defs>
+</svg>
+<nav id="navigation" class="unselectable">
+    <div id="nav-container">
+        <a id="navicon" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+        <ul id="nav-list">
+            <li class="home-nav-element"><a href="/">    <img src="/static/icons/logo.82cce208db83.svg" alt="TICA OJ" width="130" height="40" onerror="this.src=&quot;/static/icons/logo.91baf0b77368.png&quot;; this.onerror=null" style="border: none; padding-top: 4px">
+</a></li>
+            <li class="home-nav-element"><span class="nav-divider"></span></li>
+            <li class="home-menu-item"><a href="/" class="nav-home">Home</a></li>
+                <li>
+                    <a href="/problems/" class="nav-problems active">
+                        PRoblems
+                    </a>
+                </li>
+                <li>
+                    <a href="/submissions/" class="nav-submit">
+                        Submissions
+                    </a>
+                </li>
+                <li>
+                    <a href="/users/" class="nav-user">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="/organizations" class="nav-organizati">
+                        organizations
+                    </a>
+                </li>
+                <li>
+                    <a href="/contests/" class="nav-contest">
+                        Contests
+                    </a>
+                </li>
+                <li>
+                    <a href="/about/" class="nav-about">
+                        About
+                            <div class="nav-expand">&gt;</div>
+                    </a>
+<ul>                <li>
+                    <a href="/status/" class="nav-status">
+                        Judges
+                    </a>
+                </li>
+                <li>
+                    <a href="/custom_checkers/" class="nav-checkers">
+                        Custom Checkers
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/VNOI-Admin/OJ" class="nav-github">
+                        Github
+                    </a>
+                </li>
+</ul>                </li>
+        </ul>
+
+        <span id="user-links">
+            <a href="/tickets/new?issue_url=https%3A//oj.tica.edu.vn/problem/muahang_qnam/test_data" style="margin-right: 5px;">
+                <span title="Report issue">
+                    <i class="fa fa-exclamation-triangle" style="color: yellow;"></i>
+                </span>
+            </a>
+            <a id="flag_vi" href="#" onclick="submmit_language('vi')" style="margin-right: 5px; margin-top: 4px;">
+                <img src="/static/icons/vi_flag.5ae22348af5d.svg" alt="VI" height="24">
+            </a>
+            <a id="flag_en" href="#" onclick="submmit_language('en')" style="margin-right: 5px; margin-top: 4px;">
+                <img src="/static/icons/gb_flag.7e1408b72e7f.svg" alt="EN" height="24">
+            </a>
+                <ul>
+                    <li>
+                        <a href="/user">
+                            <span>
+                                <img src="https://www.gravatar.com/avatar/afe4e59117297d25c349df1a351acfbd?d=identicon&amp;s=32" height="24" width="24"><span>Hello, <b>Thầy Thịnh</b>.</span>
+                            </span>
+                        </a>
+                        <ul style="width: 150px">
+                                <li><a href="/admin/">Admin</a></li>
+                            <li><a href="/edit/profile/">Edit profile</a></li>
+                                <li>
+                                    <form action="/accounts/logout/" method="POST">
+<input type="hidden" name="csrfmiddlewaretoken" value="KJL0RFuy2Q4ALF5JIJL5r9LgNtcbhbA1Mp9Mou3Sucs3Ad0s3IWz6uxcJmnETfLZ">                                        <button type="submit">Log out</button>
+                                    </form>
+                                </li>
+                        </ul>
+                    </li>
+                </ul>
+        </span>
+    </div>
+    <div id="nav-shadow"></div>
+</nav>
+<div id="page-container">
+    <noscript>
+        <div id="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+    <br>
+    <main id="content">
+            <h2 style="display:inline">
+Editing data for <a href="/problem/muahang_qnam">Mua Hàng - Quảng Nam</a>            </h2>
+            <hr>
+        <div id="content-body">    <form action="" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="csrfmiddlewaretoken" value="KJL0RFuy2Q4ALF5JIJL5r9LgNtcbhbA1Mp9Mou3Sucs3Ad0s3IWz6uxcJmnETfLZ">        <input type="hidden" name="cases-TOTAL_FORMS" value="0" id="id_cases-TOTAL_FORMS"><input type="hidden" name="cases-INITIAL_FORMS" value="0" id="id_cases-INITIAL_FORMS"><input type="hidden" name="cases-MIN_NUM_FORMS" value="0" id="id_cases-MIN_NUM_FORMS"><input type="hidden" name="cases-MAX_NUM_FORMS" value="1" id="id_cases-MAX_NUM_FORMS">
+        <table class="table">
+            <tbody><tr><th><label for="id_problem-data-zipfile">Data zip file:</label></th><td><input type="file" name="problem-data-zipfile" id="id_problem-data-zipfile"><br><input type="submit" value="Please press this button if you have just updated the zip data" class="button" style="display: inherit" id="submit-button"></td></tr>
+<tr><th><label for="id_problem-data-grader">Grader:</label></th><td><select name="problem-data-grader" style="width: 200px" id="id_problem-data-grader" data-theme="dmoj" data-allow-clear="false" data-minimum-input-length="0" class="django-select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+  <option value="standard" selected="">Standard</option>
+
+  <option value="interactive">Interactive</option>
+
+  <option value="signature">Function Signature Grading (IOI-style)</option>
+
+  <option value="output_only">Output Only</option>
+
+</select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: 200px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-id_problem-data-grader-container"><span class="select2-selection__rendered" id="select2-id_problem-data-grader-container" title="Standard">Standard</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></td></tr>
+<tr><th><label for="id_problem-data-io_method">IO Method:</label></th><td><select name="problem-data-io_method" style="width: 200px" id="id_problem-data-io_method" data-theme="dmoj" data-allow-clear="true" data-placeholder="" data-minimum-input-length="0" class="django-select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+  <option value=""></option>
+
+  <option value="standard" selected="">Standard Input/Output</option>
+
+  <option value="file">Via files</option>
+
+</select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: 200px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-id_problem-data-io_method-container"><span class="select2-selection__rendered" id="select2-id_problem-data-io_method-container" title="Standard Input/Output"><span class="select2-selection__clear">×</span>Standard Input/Output</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-io_input_file">Input from file:</label></th><td><input type="text" name="problem-data-io_input_file" maxlength="100" id="id_problem-data-io_input_file"></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-io_output_file">Output to file:</label></th><td><input type="text" name="problem-data-io_output_file" maxlength="100" id="id_problem-data-io_output_file"></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-custom_grader">Custom grader file:</label></th><td><input type="file" name="problem-data-custom_grader" id="id_problem-data-custom_grader"></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-custom_header">Custom header file:</label></th><td><input type="file" name="problem-data-custom_header" id="id_problem-data-custom_header"></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-grader_args">Grader arguments:</label></th><td><textarea name="problem-data-grader_args" cols="40" rows="10" id="id_problem-data-grader_args">{}</textarea><br><span class="helptext">grader arguments as a JSON object</span></td></tr>
+<tr><th><label for="id_problem-data-checker">Checker:</label></th><td><select name="problem-data-checker" style="width: 200px" id="id_problem-data-checker" data-theme="dmoj" data-allow-clear="false" data-minimum-input-length="0" class="django-select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+  <option value="standard" selected="">Standard</option>
+
+  <option value="bridged">Custom checker</option>
+
+  <option value="floats">Floats</option>
+
+  <option value="floatsabs">Floats (absolute)</option>
+
+  <option value="floatsrel">Floats (relative)</option>
+
+  <option value="identical">Byte identical</option>
+
+  <option value="linecount">Line-by-line</option>
+
+</select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: 200px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-id_problem-data-checker-container"><span class="select2-selection__rendered" id="select2-id_problem-data-checker-container" title="Standard">Standard</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><input type="number" value="6" title="precision (decimal digits)" style="width: 4em; display: none;"><a style="margin-left:3em;" target="_blank" href="/custom_checkers">Instruction</a></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-custom_checker">Custom checker file:</label></th><td><input type="file" name="problem-data-custom_checker" id="id_problem-data-custom_checker" style="display: none;"></td></tr>
+<tr style="display: none;"><th><label for="id_problem-data-checker_type">Checker type:</label></th><td><select name="problem-data-checker_type" style="width: 200px; display: none;" id="id_problem-data-checker_type" data-theme="dmoj" data-allow-clear="false" data-minimum-input-length="0" class="django-select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+  <option value="themis">Themis checker</option>
+
+  <option value="testlib">Testlib checker</option>
+
+  <option value="cms">CMS checker</option>
+
+  <option value="coci">COCI checker</option>
+
+  <option value="peg">PEG checker</option>
+
+  <option value="default">DMOJ checker</option>
+
+</select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: 200px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-id_problem-data-checker_type-container"><span class="select2-selection__rendered" id="select2-id_problem-data-checker_type-container" title="Themis checker">Themis checker</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></td></tr>
+<tr><th><label for="id_problem-data-output_limit">Output limit length:</label></th><td><input type="number" name="problem-data-output_limit" id="id_problem-data-output_limit"><br><span class="helptext">Có thể bỏ trống. Chỉ thay đổi nếu độ dài của output quá dài (hơn 20Mb).</span><input type="hidden" name="problem-data-checker_args" id="id_problem-data-checker_args" value=""></td></tr>
+        </tbody></table>
+        <div class="alert alert-warning alert-dismissable" id="fill-test-case-noti" style="display: none;">
+            <a class="close">x</a>
+            <b>Test cases have been filled automatically!</b>
+            <br>
+            Test cases have been filled automatically and <strong>not saved yet</strong>!
+            <br>
+            Please modify the table below if needed and press the `Apply` button to save!
+        </div>
+        <table id="case-table" class="table">
+            <thead>
+            <tr>
+                <th><a id="add-case-first-row" href="#"><i class="fa fa-plus"></i></a></th>
+                <th class="order-column"></th>
+                <th class="type-column">Type</th>
+                <th>Input file</th>
+                <th>Output file</th>
+                <th>Points</th>
+                <th>Pretest?</th>
+                <!-- <th class="generator-args">Generator args</th> -->
+                    <th>Delete?
+                        <br>
+                        <input type="checkbox" name="delete-all" id="delete-all">
+                    </th>
+            </tr>
+            </thead>
+            <tbody>
+                    </tbody>
+                    <tbody class="extra-row-body" style="display: none">
+                <tr data-type="C">
+                    <td><a class="add-case-row-below" href="#"><i class="fa fa-plus"></i></a></td>
+                    <td><input type="hidden" name="cases-__prefix__-id" id="id_cases-__prefix__-id"><input type="number" name="cases-__prefix__-order" id="id_cases-__prefix__-order"></td>
+                    <td class="type-column"><select name="cases-__prefix__-type" style="width: 100%" id="id_cases-__prefix__-type">
+  <option value="C" selected="">Normal case</option>
+
+  <option value="S">Batch start</option>
+
+  <option value="E">Batch end</option>
+
+</select></td>
+                    <td>
+                        <input type="text" name="cases-__prefix__-input_file" maxlength="100" id="id_cases-__prefix__-input_file">
+                    </td>
+                    <td>
+                        <input type="text" name="cases-__prefix__-output_file" maxlength="100" id="id_cases-__prefix__-output_file">
+                    </td>
+                    <td><input type="number" name="cases-__prefix__-points" style="width: 4em" id="id_cases-__prefix__-points"></td>
+                    <td><input type="checkbox" name="cases-__prefix__-is_pretest" id="id_cases-__prefix__-is_pretest"></td>
+                    <!-- <td class="generator-args"><input type="hidden" name="cases-__prefix__-generator_args" id="id_cases-__prefix__-generator_args">
+                        <a href="javascript:void(0)" class="edit-generator-args">
+                            <i class="fa fa-pencil"></i>
+                            Edit generator args
+                        </a>
+                    </td> -->
+                        <td><input type="checkbox" name="cases-__prefix__-DELETE" id="id_cases-__prefix__-DELETE"></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Apply!" class="button" id="submit-button">
+        <a id="add-case-row" href="#" style="display: None;"><i class="fa fa-plus"></i> Add new case</a>
+    </form>
+    <div style="display: none" class="generator-args-editor"><textarea></textarea><a class="button">Save</a></div>
+</div>
+    </main>
+
+
+
+    <footer>
+        <span id="footer-content">
+            <br>
+            proudly powered by <a style="color: #808080" href="https://dmoj.ca"><b>DMOJ</b></a> |
+            follow us on <a style="color: #808080" href="https://github.com/VNOI-Admin/OJ"><b>Github</b></a> and <a style="color: #808080" href="https://www.facebook.com/vnoi.wiki"><b>Facebook</b></a>
+            <form id="set_language" action="/i18n/setlang/" method="post" style="display: inline">
+<input type="hidden" name="csrfmiddlewaretoken" value="KJL0RFuy2Q4ALF5JIJL5r9LgNtcbhbA1Mp9Mou3Sucs3Ad0s3IWz6uxcJmnETfLZ">            <input name="next" type="hidden" value="/problem/muahang_qnam/test_data">
+            <input name="language" type="hidden" value="en">
+          </form>
+        </span>
+    </footer>
+</div>
+
+</body></html>

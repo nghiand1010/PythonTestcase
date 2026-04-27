@@ -1,0 +1,12 @@
+{
+  "id": "hcmdep",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/hcmdep",
+  "edit_url": "https://oj.tica.edu.vn/problem/hcmdep/edit",
+  "constraints": [
+    "1 ≤ x ≤ 10",
+    "x ≤ 10",
+    "(`1 ≤ x ≤ 10^{9}`)"
+  ],
+  "has_editorial": true
+}

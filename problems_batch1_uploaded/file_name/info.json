@@ -1,0 +1,17 @@
+{
+  "id": "file_name",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/file_name",
+  "edit_url": "https://oj.tica.edu.vn/problem/file_name/edit",
+  "constraints": [
+    "3 ≤ n ≤ 100",
+    "n ≤ 100",
+    "(Tên tệp)",
+    "(không nhất thiết phải liên tiếp)",
+    "(Input)",
+    "(`3 ≤ n ≤ 100`)",
+    "(Output)",
+    "(viết bằng số La Mã là `XXX`)"
+  ],
+  "has_editorial": true
+}

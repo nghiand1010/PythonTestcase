@@ -1,0 +1,16 @@
+```
+s = input().strip()
+
+st = []
+cnt = 0
+
+for c in s:
+    if st and st[-1] == c:
+        st.pop()
+        cnt += 1
+    else:
+        st.append(c)
+
+print("Bob" if cnt % 2 == 1 else "Alice")
+
+```

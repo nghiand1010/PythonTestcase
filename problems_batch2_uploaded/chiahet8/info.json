@@ -1,0 +1,11 @@
+{
+  "id": "chiahet8",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/chiahet8",
+  "edit_url": "https://oj.tica.edu.vn/problem/chiahet8/edit",
+  "constraints": [
+    "(trừ khi số chỉ có một chữ số)",
+    "(counting sort)"
+  ],
+  "has_editorial": false
+}

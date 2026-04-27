@@ -1,0 +1,13 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/dagiac1
+
+---
+
+Vẽ hình đa giác sau:
+
+![](/martor/2d71b651-2c36-45ee-9ff0-c57e513b268e.png)
+
+
+Các con tham khảo hướng dẫn:
+1. [https://youtu.be/a41iI_0O0n4?si=ktyfH4hL0t6vao1D](https://youtu.be/a41iI_0O0n4?si=ktyfH4hL0t6vao1D)

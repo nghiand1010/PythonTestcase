@@ -1,0 +1,16 @@
+{
+  "id": "bdsochia2",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/bdsochia2",
+  "edit_url": "https://oj.tica.edu.vn/problem/bdsochia2/edit",
+  "constraints": [
+    "((1 \\le N \\le 10^{18})",
+    "(có thể có nhiều cách biến đổi khác nhau, nhưng cần chọn cách có số bước nhỏ nhất)",
+    "(cộng 1)",
+    "(chia 2)",
+    "(chia 2)",
+    "(chia 2)",
+    "(chia 2)"
+  ],
+  "has_editorial": true
+}

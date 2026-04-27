@@ -1,0 +1,13 @@
+{
+  "id": "xenke_vongtron",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/xenke_vongtron",
+  "edit_url": "https://oj.tica.edu.vn/problem/xenke_vongtron/edit",
+  "constraints": [
+    "(vì có hai ký tự `b` đứng cạnh nhau)",
+    "(Input)",
+    "(Output)",
+    "(xét theo vòng tròn)"
+  ],
+  "has_editorial": true
+}

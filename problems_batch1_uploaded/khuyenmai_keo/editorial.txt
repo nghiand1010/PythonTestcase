@@ -1,0 +1,20 @@
+```
+# Nhập vào số kẹo ban đầu Bo mua
+n = int(input())
+
+# t: tổng số kẹo đã ăn
+# v: số vỏ kẹo hiện có (ban đầu bằng số kẹo mua)
+t = n
+v = n
+
+# Khi còn đủ 10 vỏ kẹo thì tiếp tục đổi
+while v >= 10:
+    d = v // 10       # Số lần đổi trong lượt này (mỗi 10 vỏ đổi được 3 kẹo)
+    m = 3 * d         # Số kẹo mới nhận được sau khi đổi
+    t += m            # Cộng thêm số kẹo mới vào tổng số đã ăn
+    v = v - 10 * d + m  # Cập nhật lại số vỏ: trừ vỏ đã đổi, cộng vỏ mới sau khi ăn kẹo mới
+
+# In ra tổng số kẹo Bo có thể ăn được
+print(t)
+
+```

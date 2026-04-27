@@ -1,0 +1,18 @@
+```
+k = int(input())
+S = input()
+
+shift = k % 26
+
+res = []
+for ch in S:
+    if 'A' <= ch <= 'Z':
+        pos = ord(ch) - ord('A')
+        new_pos = (pos + shift) % 26
+        res.append(chr(new_pos + ord('A')))
+    else:
+        res.append(ch)
+
+print(''.join(res))
+
+```

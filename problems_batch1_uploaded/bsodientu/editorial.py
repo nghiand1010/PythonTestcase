@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for bsodientu
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+POWER = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6]
+MAXN = 10000
+
+def DEN(a: int) -> int:
+    if a == 0:
+        return POWER[0]
+    s = 0
+    while a > 0:
+        s += POWER[a % 10]
+        a //= 10
+    return s
+
+# Tiền xử lý mảng cộng dồn
+f = [0] * (MAXN + 1)
+f[0] = POWER[0]
+
+for i in range(1, MAXN + 1):
+    f[i] = f[i - 1] + DEN(i)
+
+# Đọc input từng dòng cho đến hết
+while True:
+    try:
+        s, t = map(int, input().split())
+        print(f[t] - f[s] + DEN(s))
+    except:
+        break
+

@@ -1,0 +1,14 @@
+{
+  "id": "xau_thaythe",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/xau_thaythe",
+  "edit_url": "https://oj.tica.edu.vn/problem/xau_thaythe/edit",
+  "constraints": [
+    "1 ≤ Q ≤ 100",
+    "Q ≤ 100",
+    "(REPLACE)",
+    "(x1, x2)",
+    "(x1)"
+  ],
+  "has_editorial": false
+}

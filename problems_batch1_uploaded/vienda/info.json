@@ -1,0 +1,10 @@
+{
+  "id": "vienda",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/vienda",
+  "edit_url": "https://oj.tica.edu.vn/problem/vienda/edit",
+  "constraints": [
+    "((1 \\le n \\le 50)"
+  ],
+  "has_editorial": true
+}

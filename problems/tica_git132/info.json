@@ -1,0 +1,15 @@
+{
+  "id": "tica_git132",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_git132",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_git132/edit",
+  "constraints": [
+    "1 < N < 40",
+    "N < 40",
+    "(1 < N < 40)",
+    "(theo số thứ tự)",
+    "(K < N)",
+    "(viết từ nhỏ đến lớn)"
+  ],
+  "has_editorial": false
+}

@@ -1,0 +1,10 @@
+```
+# Đọc đầu vào
+n = int(input().strip())
+r = int(input().strip())
+
+# Tính số ô đã tô ở cột r
+print(n - r + 1)
+
+
+```

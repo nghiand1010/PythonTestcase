@@ -1,0 +1,11 @@
+{
+  "id": "tica_tht24dna6",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_tht24dna6",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_tht24dna6/edit",
+  "constraints": [
+    "1 <= N <= 10000",
+    "N <= 10000"
+  ],
+  "has_editorial": false
+}

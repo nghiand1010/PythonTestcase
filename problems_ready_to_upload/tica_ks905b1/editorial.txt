@@ -1,0 +1,16 @@
+def max_coca_cola(N, K):
+    total_drunk = N  # Tổng số chai đã uống ban đầu là N chai
+    empty_bottles = N  # Số vỏ chai ban đầu
+
+    while empty_bottles >= K:
+        new_bottles = empty_bottles // K  # Số chai mới có thể đổi được
+        total_drunk += new_bottles  # Cập nhật tổng số chai đã uống
+        empty_bottles = new_bottles + (empty_bottles % K)  # Cập nhật số vỏ chai còn lại
+
+    return total_drunk
+
+# Đọc đầu vào
+N, K = map(int, input().split())
+
+# Tính kết quả và in ra
+print(max_coca_cola(N, K))

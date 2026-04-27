@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for somayman_qnam
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+n = int(input())
+cnt = [0] * 10
+
+for _ in range(n):
+    m = int(input())
+    if m == 0:
+        root = 0
+    else:
+        root = 1 + (m - 1) % 9
+    cnt[root] += 1
+
+max_freq = -1
+ans = 0
+for i in range(10):
+    if cnt[i] > max_freq:
+        max_freq = cnt[i]
+        ans = i
+
+print(ans)
+

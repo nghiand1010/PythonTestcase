@@ -1,0 +1,11 @@
+```
+s = input().rstrip()      # đọc xâu
+
+res = ""
+for ch in s:
+    if not ch.isdigit():  # nếu không phải chữ số thì giữ lại
+        res += ch
+
+print(res)
+
+```

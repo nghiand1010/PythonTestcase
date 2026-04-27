@@ -1,0 +1,19 @@
+{
+  "id": "tongdsdacbiet",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tongdsdacbiet",
+  "edit_url": "https://oj.tica.edu.vn/problem/tongdsdacbiet/edit",
+  "constraints": [
+    "B ≤ 10^8",
+    "B ≤ 1000",
+    "A = 1",
+    "B ≤ 10^8",
+    "B ≤ 10^8",
+    "(vị trí bắt đầu từ 1)",
+    "(1 ≤ A ≤ B ≤ 10^8)",
+    "(40% số test)",
+    "(20% số test)",
+    "(40% số test)"
+  ],
+  "has_editorial": false
+}

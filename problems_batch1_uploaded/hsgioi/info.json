@@ -1,0 +1,17 @@
+{
+  "id": "hsgioi",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/hsgioi",
+  "edit_url": "https://oj.tica.edu.vn/problem/hsgioi/edit",
+  "constraints": [
+    "1 ≤ N ≤ 10",
+    "N ≤ 10",
+    "K ≤ 10",
+    "b_i ≤ 10",
+    "C ≤ 10",
+    "(có thể chia cho nhiều học sinh, hoặc một học\nsinh nhiều lần)",
+    "(1 ≤ N ≤ 10³, 1 ≤ C, K ≤ 10⁹)",
+    "(0 ≤ a_i, b_i ≤ 10⁹)"
+  ],
+  "has_editorial": true
+}

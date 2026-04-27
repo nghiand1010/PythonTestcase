@@ -1,0 +1,18 @@
+{
+  "id": "binhnuoc",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/binhnuoc",
+  "edit_url": "https://oj.tica.edu.vn/problem/binhnuoc/edit",
+  "constraints": [
+    "2 ≤ n ≤ 100",
+    "2 ≤ k ≤ 10000",
+    "1 ≤ a_i ≤ 1000",
+    "n ≤ 100",
+    "k ≤ 10000",
+    "a_i ≤ 1000",
+    "(~2 ≤ n ≤ 100~)",
+    "(~2 ≤ k ≤ 10000~)",
+    "(~1 ≤ a_i ≤ 1000~)"
+  ],
+  "has_editorial": false
+}

@@ -1,0 +1,10 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/vetamgiac3
+
+---
+
+Các con vẽ hình sau:
+
+
+![](/martor/83e62f80-bb60-4f64-bd69-419df478d70a.png)

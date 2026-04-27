@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for zigzag
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+n = int(input())  # số ô mỗi hàng
+k = int(input())  # số lần đẩy
+
+# Độ dài chu kỳ
+cycle = 2*n - 4
+# Bước hiệu dụng trong chu kỳ
+t = k % cycle
+
+if t == 0:
+    # trở về vị trí ban đầu
+    print(1, 1)
+else:
+    if t <= n - 1:
+        # giai đoạn xuôi trên hàng trên, nhãn = 1 + t
+        r = 1
+        c = 1 + t
+    else:
+        # giai đoạn ngược
+        d = t - (n - 1)
+        # mỗi 2 bước giảm cột 1 đơn vị
+        step = (d + 1) // 2
+        c = n - step
+        # d chẵn → hàng dưới; d lẻ → hàng trên
+        r = 2 if d % 2 == 0 else 1
+    print(r, c)

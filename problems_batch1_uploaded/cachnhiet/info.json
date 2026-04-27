@@ -1,0 +1,16 @@
+{
+  "id": "cachnhiet",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/cachnhiet",
+  "edit_url": "https://oj.tica.edu.vn/problem/cachnhiet/edit",
+  "constraints": [
+    "(0, a_2 - a_1)",
+    "(0, a_3 - a_2)",
+    "(0, a_n - a_{n-1})",
+    "((0 < n \\le 10^5)",
+    "((1 \\le aᵢ \\le 10000)",
+    "(\\max(0, a_i - a_{i-1})",
+    "(lên đến 10⁵)"
+  ],
+  "has_editorial": true
+}

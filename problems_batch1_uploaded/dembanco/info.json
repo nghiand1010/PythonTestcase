@@ -1,0 +1,20 @@
+{
+  "id": "dembanco",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/dembanco",
+  "edit_url": "https://oj.tica.edu.vn/problem/dembanco/edit",
+  "constraints": [
+    "1 ≤ N ≤ 10",
+    "N ≤ 10",
+    "N ≤ 100",
+    "(1, 1)",
+    "(ngang hoặc dọc)",
+    "(/martor/d12f27d3-5356-4131-9d9a-1f374fdf338c.png)",
+    "(x₁, y₁)",
+    "(x₂, y₂)",
+    "(1 ≤ N ≤ 10⁹)",
+    "(1 ≤ x₁, y₁, x₂, y₂ ≤ N, và x₁ ≤ x₂, y₁ ≤ y₂)",
+    "(1,1)"
+  ],
+  "has_editorial": true
+}

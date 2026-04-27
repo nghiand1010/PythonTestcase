@@ -1,0 +1,12 @@
+{
+  "id": "dayso25",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/dayso25",
+  "edit_url": "https://oj.tica.edu.vn/problem/dayso25/edit",
+  "constraints": [
+    "1 <= N <= 10^10",
+    "N <= 10^10",
+    "(1 <= N <= 10^10)"
+  ],
+  "has_editorial": false
+}

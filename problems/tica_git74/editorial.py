@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_git74
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+#include<bits/stdc++.h>
+using namespace std;
+long long pow1(long long n,long long m,long long p){
+	if(m==1) return n;
+	if(m%2==0) return (pow1(n,m/2,p)*pow1(n,m/2,p))%p;
+	else return (n*pow1(n,m-1,p))%p;
+}
+int main(){
+	long long n;
+	cin>>n;
+	cout<<pow1(2,n-1,123456789);
+}

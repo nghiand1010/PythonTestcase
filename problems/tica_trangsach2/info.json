@@ -1,0 +1,11 @@
+{
+  "id": "tica_trangsach2",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_trangsach2",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_trangsach2/edit",
+  "constraints": [
+    "N = 1392",
+    "(số trang được\nđánh theo thứ tự từ 1, 2, 3, 4 ..... )"
+  ],
+  "has_editorial": false
+}

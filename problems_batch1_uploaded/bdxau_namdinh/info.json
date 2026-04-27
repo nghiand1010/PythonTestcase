@@ -1,0 +1,13 @@
+{
+  "id": "bdxau_namdinh",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/bdxau_namdinh",
+  "edit_url": "https://oj.tica.edu.vn/problem/bdxau_namdinh/edit",
+  "constraints": [
+    "i ≤ 10^6",
+    "n < 10^6",
+    "n = 10^6",
+    "(1 ≤ n, i ≤ 10^6)"
+  ],
+  "has_editorial": true
+}

@@ -1,0 +1,13 @@
+{
+  "id": "caudo",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/caudo",
+  "edit_url": "https://oj.tica.edu.vn/problem/caudo/edit",
+  "constraints": [
+    "N ≤ 10^8",
+    "(10 điểm)",
+    "(thay thế cho hình tròn và tam giác)",
+    "(N ≤ 10^8)"
+  ],
+  "has_editorial": true
+}

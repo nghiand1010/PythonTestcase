@@ -1,0 +1,16 @@
+{
+  "id": "contest1_caudo",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/contest1_caudo",
+  "edit_url": "https://oj.tica.edu.vn/problem/contest1_caudo/edit",
+  "constraints": [
+    "1 ≤ N ≤ 20",
+    "1 ≤ a_i ≤ 50",
+    "N ≤ 20",
+    "a_i ≤ 50",
+    "(~1 ≤ i < j ≤ N~)",
+    "(~1 ≤ N ≤ 20~)",
+    "(~1 ≤ a_i ≤ 50~)"
+  ],
+  "has_editorial": true
+}

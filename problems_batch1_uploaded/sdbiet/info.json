@@ -1,0 +1,22 @@
+{
+  "id": "sdbiet",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sdbiet",
+  "edit_url": "https://oj.tica.edu.vn/problem/sdbiet/edit",
+  "constraints": [
+    "1 ≤ N ≤ 10^18",
+    "6 < N ≤ 10^9",
+    "N ≤ 10^18",
+    "N ≤ 10^6",
+    "N ≤ 10^9",
+    "(1 ≤ N ≤ 10^18)",
+    "(input()",
+    "(x - 1)",
+    "(d)",
+    "(x - 1)",
+    "(digits)",
+    "(str(2 * d - 1)",
+    "(\"\".join(res_chars)"
+  ],
+  "has_editorial": true
+}

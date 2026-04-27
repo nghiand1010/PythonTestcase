@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_git73
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	string a;
+	cin>>a;
+	char x='a';
+	int pos=0;
+	for(int i=0;i<a.size();i++){
+		if(a[i]>x) x=a[i];
+	}
+	while(pos<a.size()){
+		for(int i=pos;i<a.size();i++){
+			if(a[i]==x){
+				pos=i;
+				cout<<x;
+			}
+		}
+		x--;
+		if(x==96) break;
+	}
+}

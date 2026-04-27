@@ -1,0 +1,14 @@
+{
+  "id": "sodautien",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sodautien",
+  "edit_url": "https://oj.tica.edu.vn/problem/sodautien/edit",
+  "constraints": [
+    "N < 10^12",
+    "(a + 1)",
+    "(a + 2)",
+    "(a + k - 1)",
+    "(là số đầu tiên của dãy)"
+  ],
+  "has_editorial": false
+}

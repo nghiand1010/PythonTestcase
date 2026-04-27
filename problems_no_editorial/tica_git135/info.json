@@ -1,0 +1,13 @@
+{
+  "id": "tica_git135",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_git135",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_git135/edit",
+  "constraints": [
+    "M ≤ 100",
+    "(`1 ≤ j ≤ M`)",
+    "(`1 ≤ i ≤ N`)",
+    "(không bắt đầu bằng chữ số 0)"
+  ],
+  "has_editorial": false
+}

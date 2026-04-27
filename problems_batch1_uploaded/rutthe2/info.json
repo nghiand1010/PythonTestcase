@@ -1,0 +1,15 @@
+{
+  "id": "rutthe2",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/rutthe2",
+  "edit_url": "https://oj.tica.edu.vn/problem/rutthe2/edit",
+  "constraints": [
+    "1 ≤ N ≤ 10",
+    "N ≤ 10",
+    "(phiên bản đơn giản từ Codeforces 381A)",
+    "(INPUT)",
+    "(OUTPUT)",
+    "(1)"
+  ],
+  "has_editorial": true
+}

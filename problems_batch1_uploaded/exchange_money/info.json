@@ -1,0 +1,14 @@
+{
+  "id": "exchange_money",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/exchange_money",
+  "edit_url": "https://oj.tica.edu.vn/problem/exchange_money/edit",
+  "constraints": [
+    "1 ≤ N ≤ 100000",
+    "T ≤ 50",
+    "N ≤ 100000",
+    "(T ≤ 50)",
+    "(1 ≤ N ≤ 100000)"
+  ],
+  "has_editorial": true
+}

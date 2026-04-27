@@ -1,0 +1,24 @@
+{
+  "id": "kytu1",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/kytu1",
+  "edit_url": "https://oj.tica.edu.vn/problem/kytu1/edit",
+  "constraints": [
+    "1 ≤ u ≤ 2",
+    "1 ≤ L ≤ 10^5",
+    "1 ≤ Q ≤ 10^5",
+    "L ≤ 10^5",
+    "u = 1",
+    "u = 2",
+    "L = 3",
+    "u ≤ 2",
+    "L ≤ 10^5",
+    "Q ≤ 10^5",
+    "(L ≤ 10^5)",
+    "(u = 1)",
+    "(u = 2)",
+    "(vị trí đối xứng qua trung tâm của chuỗi)",
+    "(1 ≤ u ≤ 2; 1 ≤ v ≤ L)"
+  ],
+  "has_editorial": true
+}

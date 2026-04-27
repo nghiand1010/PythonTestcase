@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_ks905b4
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+def max_stack_height(n, disks):
+    # Sắp xếp các đĩa theo bán kính tăng dần, nếu bằng thì theo chiều cao tăng dần
+    disks.sort(key=lambda x: (x[0], x[1]))  # Sort theo Ri trước, Hi sau
+
+    # Khởi tạo mảng dp: dp[i] là chiều cao lớn nhất kết thúc tại đĩa i
+    dp = [0] * n
+
+    for i in range(n):
+        dp[i] = disks[i][1]  # Chiều cao ban đầu của đĩa i
+        for j in range(i):
+            # Nếu đĩa j có thể đặt dưới đĩa i
+            if disks[j][0] < disks[i][0] and disks[j][1] < disks[i][1]:
+                dp[i] = max(dp[i], dp[j] + disks[i][1])
+
+    # Kết quả là chiều cao lớn nhất trong dp
+    return max(dp)
+
+# Input
+n = int(input())  # Số lượng đĩa
+disks = [tuple(map(int, input().split())) for _ in range(n)]  # Danh sách các đĩa (Ri, Hi)
+
+# Output
+print(max_stack_height(n, disks))

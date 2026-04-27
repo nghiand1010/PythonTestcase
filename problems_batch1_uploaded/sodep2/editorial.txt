@@ -1,0 +1,19 @@
+```
+def dem_uoc(a, b, p):
+    tong = 0
+    i = p
+    while i <= b:
+        tong += b // i - (a - 1) // i
+        i *= p
+    return tong
+
+# Nhập số lượng bài test
+T = int(input())
+
+for _ in range(T):
+    a, b = map(int, input().split())
+    so2 = dem_uoc(a, b, 2)
+    so5 = dem_uoc(a, b, 5)
+    print(min(so2, so5))
+
+```

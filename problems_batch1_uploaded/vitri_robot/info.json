@@ -1,0 +1,16 @@
+{
+  "id": "vitri_robot",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/vitri_robot",
+  "edit_url": "https://oj.tica.edu.vn/problem/vitri_robot/edit",
+  "constraints": [
+    "k ≤ 10^9",
+    "(nhập từ bàn phím)",
+    "(1 ≤ a, b, k ≤ 10^9)",
+    "(ghi ra màn hình)",
+    "(b1)",
+    "(b2)",
+    "(b3)"
+  ],
+  "has_editorial": true
+}

@@ -1,0 +1,9 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tochucsukien
+
+---
+
+![](/martor/439186b8-8197-4b3e-9028-7df48625f59d.png)
+
+![](/martor/47d66a53-ad24-4561-b005-4e739e9cb405.png)

@@ -1,0 +1,8 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tica_evenland
+
+---
+
+![](/martor/88a3b190-01ba-4049-ad63-876f082eef3c.png)
+![](/martor/6269d88b-a40e-457c-9529-99e1633b4231.png)

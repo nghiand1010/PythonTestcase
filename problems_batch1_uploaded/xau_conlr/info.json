@@ -1,0 +1,16 @@
+{
+  "id": "xau_conlr",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/xau_conlr",
+  "edit_url": "https://oj.tica.edu.vn/problem/xau_conlr/edit",
+  "constraints": [
+    "(có thể chứa dấu cách)",
+    "((0 \\le L \\le R < len(y)",
+    "(tính cả L và R)",
+    "(Input)",
+    "(10^6\\)",
+    "((1 \\le N \\le 100)",
+    "(Output)"
+  ],
+  "has_editorial": true
+}

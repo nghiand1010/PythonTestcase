@@ -1,0 +1,16 @@
+{
+  "id": "tica_git2",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_git2",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_git2/edit",
+  "constraints": [
+    "1 ≤ t ≤10",
+    "1 ≤ n ≤ 50",
+    "t ≤10",
+    "n ≤ 50",
+    "(1 ≤ t ≤10)",
+    "(1 ≤ n ≤ 50)",
+    "(/martor/5555751b-71bc-433d-bc5e-76b8d380f6c9.png)"
+  ],
+  "has_editorial": true
+}

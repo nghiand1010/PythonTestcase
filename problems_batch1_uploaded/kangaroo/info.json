@@ -1,0 +1,19 @@
+{
+  "id": "kangaroo",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/kangaroo",
+  "edit_url": "https://oj.tica.edu.vn/problem/kangaroo/edit",
+  "constraints": [
+    "1 ≤ n ≤ 10^9",
+    "n ≤ 10^9",
+    "b ≤ 20",
+    "(đơn vị dm)",
+    "(đơn vị dm)",
+    "(đơn vị dm)",
+    "(phải nhảy vừa đủ, **không được nhảy quá nhà bạn**)",
+    "(Input)",
+    "(cách nhau bởi một khoảng trắng)",
+    "(Output)"
+  ],
+  "has_editorial": false
+}

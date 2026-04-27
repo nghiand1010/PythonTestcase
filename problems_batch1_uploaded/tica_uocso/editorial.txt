@@ -1,0 +1,21 @@
+```
+import math
+
+n = int(input().strip())
+
+if n == 0:
+    print("INF")
+else:
+    m = abs(n)
+    divs = []
+    r = int(math.isqrt(m))
+    for i in range(1, r + 1):
+        if m % i == 0:
+            divs.append(i)
+            j = m // i
+            if j != i:
+                divs.append(j)
+    divs.sort(reverse=True)
+    print(*divs)
+
+```

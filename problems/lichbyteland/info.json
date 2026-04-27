@@ -1,0 +1,17 @@
+{
+  "id": "lichbyteland",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/lichbyteland",
+  "edit_url": "https://oj.tica.edu.vn/problem/lichbyteland/edit",
+  "constraints": [
+    "1 ≤ w ≤ 7",
+    "1 ≤ d ≤ 31",
+    "1 ≤ m ≤ 10^9",
+    "w ≤ 7",
+    "d ≤ 31",
+    "m ≤ 10^9",
+    "(1 ≤ w ≤ 7)",
+    "(1 ≤ d ≤ 31; 1 ≤ m ≤ 10^9)"
+  ],
+  "has_editorial": true
+}

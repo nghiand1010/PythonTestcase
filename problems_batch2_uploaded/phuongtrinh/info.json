@@ -1,0 +1,15 @@
+{
+  "id": "phuongtrinh",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/phuongtrinh",
+  "edit_url": "https://oj.tica.edu.vn/problem/phuongtrinh/edit",
+  "constraints": [
+    "1 ≤ n ≤ 10^7",
+    "n ≤ 10^7",
+    "b ≤ 10^9",
+    "(Equation)",
+    "(1 ≤ n ≤ 10^7)",
+    "(2 ≤ a, b ≤ 10^9, a - b = n)"
+  ],
+  "has_editorial": true
+}

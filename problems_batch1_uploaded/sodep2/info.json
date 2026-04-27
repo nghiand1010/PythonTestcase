@@ -1,0 +1,31 @@
+{
+  "id": "sodep2",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sodep2",
+  "edit_url": "https://oj.tica.edu.vn/problem/sodep2/edit",
+  "constraints": [
+    "1 ≤ T ≤ 10",
+    "1 ≤ T ≤ 10",
+    "1 ≤ T ≤ 10",
+    "a = 4",
+    "b = 15",
+    "S = 4",
+    "T ≤ 10",
+    "b ≤ 10",
+    "T ≤ 10",
+    "b ≤ 10",
+    "T = 1",
+    "b ≤ 10",
+    "T ≤ 10",
+    "b ≤ 10",
+    "T ≤ 10",
+    "b ≤ 10",
+    "(với a < b)",
+    "(a + 1)",
+    "(a + 2)",
+    "(1 ≤ T ≤ 10⁵)",
+    "(1 ≤ a < b ≤ 10¹⁶)",
+    "(2,5)"
+  ],
+  "has_editorial": true
+}

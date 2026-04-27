@@ -1,0 +1,14 @@
+{
+  "id": "chuoioc",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/chuoioc",
+  "edit_url": "https://oj.tica.edu.vn/problem/chuoioc/edit",
+  "constraints": [
+    "n ≤ 10^18",
+    "n ≤ 10^3",
+    "n ≤ 10^9",
+    "n ≤ 10^18",
+    "(0 ≤ m, n ≤ 10^18)"
+  ],
+  "has_editorial": true
+}

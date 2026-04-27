@@ -1,53 +1,48 @@
-a = [[0] * 101 for _ in range(101)]
-check = [0] * 101
-v = [[] for _ in range(101)]
+s = input().strip()
+n = len(s)
 
+bad = -1
+for i in range(1, n):
+    if int(s[i]) % 2 == int(s[i - 1]) % 2:
+        bad = i
+        break
 
-def dfs(node):
-    check[node] = 1
-    for neighbor in v[node]:
-        if not check[neighbor]:
-            dfs(neighbor)
+if bad == -1:
+    print(s)
+else:
+    kq = ""
 
+    for i in range(bad, -1, -1):
+        a = int(s[i])
 
-def main():
-    t = int(input())
-    while t > 0:
-        n = int(input())
-        s = 0
-        ans = 0
+        for d in range(a - 1, -1, -1):
+            if i == 0 and d == 0:
+                continue
 
-        for i in range(1, n + 1):
-            check[i] = 0
-            v[i].clear()
+            if i > 0 and d % 2 == int(s[i - 1]) % 2:
+                continue
 
-        for i in range(1, n + 1):
-            for j in range(1, n + 1):
-                a[i][j] = int(input())
-                if i >= j and a[i][j]:
-                    v[i].append(j)
-                    v[j].append(i)
+            kq = s[:i] + str(d)
+            last = d
 
-        for i in range(1, n + 1):
-            if not check[i]:
-                s += 1
-                dfs(i)
+            for j in range(i + 1, n):
+                if last % 2 == 0:
+                    kq += "9"
+                    last = 9
+                else:
+                    kq += "8"
+                    last = 8
 
-        for i in range(1, n + 1):
-            check = [0] * 101  # Reset check array
-            k = 0
-            check[i] = 1
-            for j in range(1, n + 1):
-                if not check[j]:
-                    k += 1
-                    dfs(j)
-            if k > s:
-                s = k
-                ans = i
+            break
 
-        print(ans)
-        t -= 1
+        if kq != "":
+            break
 
+    if kq == "":
+        for i in range(n - 1):
+            if i % 2 == 0:
+                kq += "9"
+            else:
+                kq += "8"
 
-if __name__ == "__main__":
-    main()
+    print(kq)

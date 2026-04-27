@@ -1,0 +1,22 @@
+{
+  "id": "muahang_qnam",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/muahang_qnam",
+  "edit_url": "https://oj.tica.edu.vn/problem/muahang_qnam/edit",
+  "constraints": [
+    "0 < N ≤ 100",
+    "0 < M ≤ 10^9",
+    "N ≤ 100",
+    "M ≤ 10^9",
+    "(Min)",
+    "(BUY.INP)",
+    "(0 < N ≤ 100)",
+    "(0 < M ≤ 10^9)",
+    "(BUY.OUT)",
+    "(BUY.INP)",
+    "(BUY.OUT)",
+    "(BUY.INP)",
+    "(BUY.OUT)"
+  ],
+  "has_editorial": true
+}

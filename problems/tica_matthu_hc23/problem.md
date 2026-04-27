@@ -1,0 +1,8 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tica_matthu_hc23
+
+---
+
+![](/martor/e2389d86-478e-4385-943c-a2d52dde5877.png)
+![](/martor/1bfd37f9-b1fd-473b-bba5-2f2658e15cfb.png)

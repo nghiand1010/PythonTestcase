@@ -1,0 +1,17 @@
+{
+  "id": "tica_tomau4",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/tica_tomau4",
+  "edit_url": "https://oj.tica.edu.vn/problem/tica_tomau4/edit",
+  "constraints": [
+    "j=0",
+    "N ≤ 10^9",
+    "(N×N)",
+    "(các hàng và cột đánh số từ 1 đến N)",
+    "(tập các ô i-j=0)",
+    "(tập các ô i+j=N+1)",
+    "(nếu một ô thuộc cả hai loại đường chéo thì chỉ tính một lần)",
+    "(1 ≤ K < N ≤ 10^9)"
+  ],
+  "has_editorial": false
+}

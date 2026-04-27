@@ -1,0 +1,14 @@
+{
+  "id": "toan_hoc",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/toan_hoc",
+  "edit_url": "https://oj.tica.edu.vn/problem/toan_hoc/edit",
+  "constraints": [
+    "(Toán học cứu nguy)",
+    "(tức là số sau **không nhỏ hơn** số trước)",
+    "(Input)",
+    "(Output)",
+    "(các số được sắp xếp theo thứ tự không giảm)"
+  ],
+  "has_editorial": true
+}

@@ -1,0 +1,7 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tica_git72
+
+---
+
+![](/martor/084080d3-82a8-4e35-aa89-0a5f4fd1018b.png)

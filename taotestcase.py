@@ -12,9 +12,11 @@ import os
 import glob
 
 
+
+
 import math
 from collections import Counter
-
+from math import isqrt
 from _decimal import Decimal
 
 filename = "daura"
@@ -90,7 +92,7 @@ def generate_4_digit_prime():
         if is_prime(number):
             return number
 
-def run_algo(chuoi_dau_vao):
+def run_algo(chuoi_dau_vao, algo_file='main.py'):
 
     # Chuỗi bạn muốn Python đọc như từ console
     # Tạo đối tượng StringIO từ chuỗi đầu vào
@@ -107,8 +109,13 @@ def run_algo(chuoi_dau_vao):
         sys.stdout = output_io
 
         #thuật toán viết ở đây
-        # Nội dung bài giải
-        runAlgoContent()
+        # Đọc và thực thi code từ file
+        with open(algo_file, 'r', encoding='utf-8') as f:
+            algo_code = f.read()
+        
+        # Tạo global namespace riêng để exec có thể truy cập biến đúng cách
+        exec_globals = {}
+        exec(algo_code, exec_globals)
 
 
     finally:
@@ -170,91 +177,149 @@ def run_cpp(user_input=''):
 
 def runAlgoContent():
     #băt dau
-    def convertFive(n):
-        if n == 0:
-            return 5
-        y = [c for c in str(n)]
-        for i in range(len(y)):
-            if y[i] == '0':
-                y[i] = '5'
-        return int("".join(y))
+    s = input()
 
-    t = int(input())
-    while t != 0:
-        t -= 1
-        v = int(input())
-        print(convertFive(v))
+    a = []
+    so = []
+    t = 0
+
+    for ch in s:
+        if '0' <= ch <= '9':
+            a.append(ch)
+            so.append(ch)
+        else:
+            if so:
+                t += int(''.join(so))
+                so = []
+
+    if so:
+        t += int(''.join(so))
+
+    a = ''.join(a)
+
+    if a == "":
+        print(0)
+        print("KHONG")
+        print(0)
+    else:
+        print(int(a))
+
+        vt = -1
+        for i in range(len(a)):
+            if a[i] == '0' or a[i] == '5':
+                vt = i
+
+        if vt == -1:
+            print("KHONG")
+        else:
+            print(int(a[:vt + 1]))
+
+    print(t)
 
     #ket thuc
 
 
-for i in range(1,12):
-    #T= tao_so_ngau_nhien(2,min((i+1)**(i),10**2))
-    T1=tao_so_ngau_nhien(1,10**5)
-    T2=tao_so_ngau_nhien(0,10**12)
-    #THEM
-    #T3=tao_so_ngau_nhien(T2,T1)
-    #T4 = tao_so_ngau_nhien(1,10)
-    #T5= tao_so_ngau_nhien(1, 10)
-    #p=tao_so_ngau_nhien(1,min((i+1)**(i),10**6))
-  # p1= tao_so_ngau_nhien(1, min((i + 1) ** (i), 10 ** 3))
-
-    # s=generate_random_string_letter(T)
-
-
-
-
-    # n = tao_so_ngau_nhien(2, min((i + 1) ** (i), 100000))
-    # n=tao_so_ngau_nhien(1,255)
-    # s=generate_random_string_letter(n)
-    #
-
-    # k = tao_so_ngau_nhien(1, min((i+1)**(i),20))
-
-    # k=tao_so_ngau_nhien(1,T+n)
-    #
-    # a = tao_mang_ngau_nhien(T, 1, 30)
-    # a = "\n".join(map(str, a))
-    # k=generate_unique_integers(1,T,T-1)
-    # k=" ".join(map(str, k))
-
-    # s=str(k)+s
-
-
-   #1 test=''
-   #2 for j in range(1,T+1):
-        # n=tao_so_ngau_nhien(2,min((j+1)**(j),1000000 ))
-        #
-        # x=tao_so_ngau_nhien(1,n)
-        #
-        # z=tao_so_ngau_nhien(1,n)
-        # z2=tao_so_ngau_nhien(1,min(100,n//2))
-        # a = tao_mang_ngau_nhien(3, 1, 100000)
-        # a = " ".join(map(str, a))
-
-        # s=generate_random_string_letter(n)
-        # s=s.upper()
-   #3     s = generate_random_string_withchars('abc',3)
-        # s=str(x)+s
-        # s=s.lower()
-    #4    test=f'{test}{s}\n'
-
-
-   # mang=generate_random_floats_array(n,0,100)
-   # input_value=f'{n}\n{" ".join(map(str, mang))}'
-    #input_value = f'{" ".join(map(str, mang))}'
-    # test=test.strip()
-
-    #input_value = f'{T1}'
-    input_value = f'{T1}\n{T2}'
-    #input_value = f'{T1}\n{T2}\n{T3}'
-    #input_value = f'{T}\n{T1}\n{T2}\n{T3}\n{T4}\n{T5}'
+# Tạo test cases
+# Dòng 1: n và S (2 ≤ n ≤ 10^5, S ≤ 10^6)
+# Dòng 2: n số nguyên dương a1, a2, ..., an (1 ≤ ai ≤ 10^6)
+for i in range(1, 12):
+    if i == 1:
+        # Test case 1: n nhỏ nhất, đảm bảo có cặp
+        n = 2
+        S = 10
+        a = [3, 7]  # có 1 cặp
+    elif i == 2:
+        # Test case 2: Có nhiều cặp giống nhau
+        n = tao_so_ngau_nhien(10, 50)
+        S = 100
+        a = [50] * n  # tất cả đều tạo cặp với nhau
+    elif i == 3:
+        # Test case 3: S nhỏ, tạo cặp
+        n = tao_so_ngau_nhien(5, 20)
+        S = tao_so_ngau_nhien(10, 100)
+        # Tạo một nửa mảng, nửa còn lại là phần bù
+        a = tao_mang_ngau_nhien(n//2, 1, S-1)
+        for x in a[:n//2]:
+            a.append(S - x)
+        random.shuffle(a)
+        a = a[:n]
+    elif i == 4:
+        # Test case 4: n lớn, S trung bình, có một số cặp
+        n = tao_so_ngau_nhien(500, 1000)
+        S = tao_so_ngau_nhien(100, 1000)
+        a = tao_mang_ngau_nhien(n, 1, S)
+        # Thêm một số cặp chắc chắn
+        for j in range(10):
+            x = tao_so_ngau_nhien(1, S-1)
+            a[j*2] = x
+            a[j*2+1] = S - x
+    elif i == 5:
+        # Test case 5: Tất cả ai = 1, S = 2
+        n = tao_so_ngau_nhien(10, 100)
+        S = 2
+        a = [1] * n
+    elif i == 6:
+        # Test case 6: Không có cặp nào
+        n = tao_so_ngau_nhien(10, 50)
+        S = 10
+        a = tao_mang_ngau_nhien(n, 100, 1000)  # tất cả đều lớn hơn S
+    elif i == 7:
+        # Test case 7: n trung bình, nhiều cặp khác nhau
+        n = tao_so_ngau_nhien(100, 500)
+        S = tao_so_ngau_nhien(100, 5000)
+        a = tao_mang_ngau_nhien(n, 1, S)
+    elif i == 8:
+        # Test case 8: S lớn, mảng có giá trị vừa phải
+        n = tao_so_ngau_nhien(100, 500)
+        S = tao_so_ngau_nhien(10**5, 10**6)
+        a = tao_mang_ngau_nhien(n, 1, S)
+        # Thêm một số cặp
+        for j in range(5):
+            x = tao_so_ngau_nhien(1, S-1)
+            a.append(x)
+            a.append(S - x)
+        n = len(a)
+    elif i == 9:
+        # Test case 9: Mảng tăng dần với cặp
+        n = tao_so_ngau_nhien(50, 200)
+        S = tao_so_ngau_nhien(100, 1000)
+        a = sorted(tao_mang_ngau_nhien(n, 1, S))
+    elif i == 10:
+        # Test case 10: Giá trị trùng lặp nhiều
+        n = tao_so_ngau_nhien(50, 200)
+        S = tao_so_ngau_nhien(50, 500)
+        base_val = S // 2
+        a = [base_val] * (n // 2) + tao_mang_ngau_nhien(n - n//2, 1, S)
+        random.shuffle(a)
+    else:
+        # Test case 11: Ngẫu nhiên với một số cặp đảm bảo
+        n = tao_so_ngau_nhien(100, 500)
+        S = tao_so_ngau_nhien(100, 10000)
+        a = tao_mang_ngau_nhien(n-20, 1, S)
+        # Thêm 10 cặp chắc chắn
+        for j in range(10):
+            x = tao_so_ngau_nhien(1, S-1)
+            a.append(x)
+            a.append(S - x)
+        random.shuffle(a)
+    
+    # Tạo nội dung test case
+    input_value = f"{n} {S}\n"
+    input_value += " ".join(map(str, a)) + "\n"
+    
     with open(f'{filename}/input{i}.in', "w", encoding="utf-8") as f:
         f.write(input_value)
-    out_put=run_algo(input_value)
+    
+    out_put = run_algo(input_value, 'algo.py')
 
-    sys.stdout = open(f'{filename}/output{i}.out', 'w', encoding="utf-8")
-    sys.stdout.write(out_put)
+    with open(f'{filename}/output{i}.out', 'w', encoding="utf-8") as f:
+        f.write(out_put.rstrip('\n'))
+    
+    print(f"Đã tạo test case {i}:")
+    print(input_value)
+    print("-" * 50)
+
+print(f"\n✅ Đã tạo xong 11 test cases trong thư mục '{filename}/'")
     #hết nội dung
 
 def read_all_in_files(directory):

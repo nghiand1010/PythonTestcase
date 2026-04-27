@@ -1,0 +1,15 @@
+{
+  "id": "sodacbiet4",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/sodacbiet4",
+  "edit_url": "https://oj.tica.edu.vn/problem/sodacbiet4/edit",
+  "constraints": [
+    "10 ≤ n ≤ 10",
+    "n ≤ 10",
+    "(1^2 + 2^2 = 5\\)",
+    "(2^2 + 1^2 = 5\\)",
+    "(2^2 + 4^2 = 20\\)",
+    "(10 ≤ n ≤ 10¹⁸)"
+  ],
+  "has_editorial": true
+}

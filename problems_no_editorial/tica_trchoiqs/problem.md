@@ -1,0 +1,8 @@
+# Unknown
+
+**URL:** https://oj.tica.edu.vn/problem/tica_trchoiqs
+
+---
+
+![](/martor/f84ca94e-12a2-4693-932c-a7dec49dc980.png)
+![](/martor/cefbef0a-b913-48e5-88f7-b90457a37315.png)

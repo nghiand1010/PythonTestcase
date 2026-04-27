@@ -1,0 +1,22 @@
+{
+  "id": "soquediem",
+  "title": "Unknown",
+  "url": "https://oj.tica.edu.vn/problem/soquediem",
+  "edit_url": "https://oj.tica.edu.vn/problem/soquediem/edit",
+  "constraints": [
+    "1 ≤ K ≤ 6",
+    "1 ≤ M ≤ 10",
+    "K ≤ 6",
+    "M ≤ 10",
+    "P = 0",
+    "P = 1",
+    "P = 0",
+    "P = 1",
+    "K = 2",
+    "K = 3",
+    "K = 3",
+    "(hoặc sinh hoán vị chữ số)",
+    "(DP, bitmask)"
+  ],
+  "has_editorial": true
+}
