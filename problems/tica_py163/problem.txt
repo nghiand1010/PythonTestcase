@@ -1,0 +1,46 @@
+# Bài 163: Thống kê chữ cái
+
+## Đề bài
+
+Cho chuỗi ký tự `S` chỉ gồm các chữ cái tiếng Anh in thường.
+
+Hãy đếm số lần xuất hiện của mỗi chữ cái trong chuỗi.
+
+## Đầu vào
+
+Gồm một dòng chứa chuỗi ký tự `S`.
+
+## Ràng buộc
+
+```text
+1 ≤ |S| ≤ 10^3
+```
+
+## Đầu ra
+
+In ra một số dòng, mỗi dòng gồm:
+
+```text
+chữ_cái:số_lần_xuất_hiện
+```
+
+Chỉ in những chữ cái có xuất hiện trong chuỗi `S`.
+
+Các chữ cái cần được in theo trật tự tăng dần trong bảng chữ cái.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+abacbf
+```
+
+### Đầu ra
+
+```text
+a:2
+b:2
+c:1
+f:1
+```

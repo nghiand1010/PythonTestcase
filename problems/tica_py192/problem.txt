@@ -1,0 +1,64 @@
+# Bài 192: Tin nhắn
+
+## Đề bài
+
+Bạn đang nhắn tin trong một mạng xã hội phổ biến bằng điện thoại thông minh.
+
+Điện thoại thông minh hiển thị hết tất cả các cuộc hội thoại gần đây nhất với bạn bè của bạn.
+
+Màn hình hiện tại có thể hiển thị nhiều nhất `k` cuộc trò chuyện khác nhau.
+
+Mỗi lúc, bạn nhận được một tin nhắn từ một người bạn có số hiệu `d`.
+
+Nếu cuộc trò chuyện với người đó đã có trên màn hình, nó được đưa lên đầu danh sách. Nếu chưa có, cuộc trò chuyện mới được thêm lên đầu. Nếu lúc đó có nhiều hơn `k` cuộc trò chuyện trên màn hình thì cuộc trò chuyện cuối danh sách bị xóa.
+
+## Yêu cầu
+
+Hãy tìm danh sách các cuộc hội thoại theo thứ tự chúng được hiển thị trên màn hình sau khi xử lý tất cả tin nhắn.
+
+## Đầu vào
+
+- Dòng đầu chứa hai số nguyên `n` và `k`, lần lượt là số lượng tin nhắn và số lượng cuộc hội thoại tối đa có thể hiển thị.
+- Dòng thứ hai chứa `n` số nguyên `d1, d2, ..., dn`, trong đó `di` là số hiệu của người bạn đã gửi tin nhắn thứ `i`.
+
+## Ràng buộc
+
+```text
+1 ≤ n, k ≤ 200
+1 ≤ di ≤ 10^9
+```
+
+## Đầu ra
+
+- Dòng đầu in số nguyên `m` là số lượng cuộc hội thoại được hiển thị sau khi đọc hết tin nhắn.
+- Dòng thứ hai in `m` số nguyên là số hiệu người bạn trong các cuộc trò chuyện được hiển thị theo thứ tự từ trên xuống dưới.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+7 2
+1 2 3 2 1 3 2
+```
+
+### Đầu ra
+
+```text
+2
+2 1
+```
+
+### Đầu vào
+
+```text
+10 3
+2 3 1 1 2 1 2 3 3 2
+```
+
+### Đầu ra
+
+```text
+3
+1 3 2
+```

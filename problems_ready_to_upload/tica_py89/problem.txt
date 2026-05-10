@@ -1,0 +1,89 @@
+# Bài 89: Mua bưởi
+
+## Đề bài
+
+Mùa bưởi đỏ Tân Lạc đã đến, An và Bình ra chợ mua một số quả bưởi đỏ.
+
+Bưởi đỏ được bán với giá `z` VNĐ một quả. An có `x` VNĐ, Bình có `y` VNĐ. Mỗi bạn sẽ mua nhiều nhất có thể bằng tiền của mình.
+
+Hai bạn bàn về cách mua và thấy rằng họ có thể mua được nhiều bưởi hơn nếu một trong số họ cho người kia vay tiền.
+
+Ví dụ: giả sử An có `5` VNĐ, Bình có `4` VNĐ, và giá cho một quả bưởi là `3` VNĐ.
+
+Nếu hai người không vay tiền nhau, họ sẽ mua được:
+
+```text
+1 + 1 = 2 quả bưởi
+```
+
+Tuy nhiên, nếu Bình cho An vay `1` VNĐ, thì An sẽ có `6` VNĐ, Bình còn `3` VNĐ và hai bạn sẽ mua được:
+
+```text
+2 + 1 = 3 quả bưởi
+```
+
+Đối với học sinh, tiền là rất quý và khó kiếm, vì vậy An và Bình muốn mua số lượng bưởi tối đa có thể nhưng không ai muốn mắc nợ ai.
+
+## Yêu cầu
+
+Trong số tất cả các cách có thể để mua số lượng bưởi tối đa, hãy tìm cách mua giảm thiểu số tiền vay nợ của một trong hai bạn.
+
+Không quan trọng ai là người vay nợ.
+
+## Đầu vào
+
+Gồm một dòng chứa ba số nguyên `x, y, z`, lần lượt là:
+
+- Số tiền của An;
+- Số tiền của Bình;
+- Giá của một quả bưởi.
+
+Điều kiện:
+
+```text
+0 ≤ x, y ≤ 10^18
+1 ≤ z ≤ 10^18
+```
+
+## Đầu ra
+
+In hai số nguyên `a, b`, lần lượt là:
+
+- `a`: số quả bưởi tối đa hai người có thể mua;
+- `b`: số tiền tối thiểu mà một trong hai người phải vay của người kia.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+5 4 3
+```
+
+### Đầu ra
+
+```text
+3 1
+```
+
+### Đầu vào
+
+```text
+6 8 2
+```
+
+### Đầu ra
+
+```text
+7 0
+```
+
+## Giải thích
+
+Ví dụ 1 đã được mô tả trong đề bài.
+
+Ở ví dụ 2, giải pháp tối ưu là không ai vay tiền của ai. Hai bạn sẽ mua được:
+
+```text
+3 + 4 = 7 quả bưởi
+```

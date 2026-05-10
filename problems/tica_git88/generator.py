@@ -50,24 +50,28 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git88
-    TODO: Customize this function based on problem constraints
+    Input: n, then n floats - compute average with 12 decimals
+    Constraints: 1 <= n <= 10^5, floats can be large
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
-    
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
+    # Test 1: Simple integers
     test_cases.append("3\n1 2 3\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 2: Simple floats
+    test_cases.append("5\n1.5 2.5 3.5 4.5 5.5\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 3: Mixed
+    test_cases.append("4\n10.123 20.456 30.789 40.012\n")
+    
+    # Test 4-10: Scaled cases
+    for n in [10, 100, 1000, 10000, 30000, 60000, 100000]:
+        nums = [round(random.uniform(0, 1000), 6) for _ in range(n)]
+        test_cases.append(f"{n}\n" + " ".join(map(str, nums)) + "\n")
+    
+    # Test 11: Random
+    nums = [round(random.uniform(0, 10000), 6) for _ in range(5000)]
+    test_cases.append(f"5000\n" + " ".join(map(str, nums)) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git88...")

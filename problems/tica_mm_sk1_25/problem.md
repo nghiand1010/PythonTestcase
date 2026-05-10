@@ -1,8 +1,0 @@
-# Unknown
-
-**URL:** https://oj.tica.edu.vn/problem/tica_mm_sk1_25
-
----
-
-![](/martor/3b6ccc7d-ea55-4b91-aeac-ee65c0b6cf92.png)
-![](/martor/9da2a495-1d05-4205-be6b-7fb944173de0.png)

@@ -50,24 +50,27 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git81
-    TODO: Customize this function based on problem constraints
+    Input: 10 numbers - count distinct values mod 42
+    Constraints: 0 <= a[i] <= 1000
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: All different mod 42
+    test_cases.append("0 1 2 3 4 5 6 7 8 9\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: All same mod 42
+    test_cases.append("0 42 84 126 168 210 252 294 336 378\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Mixed
+    test_cases.append("10 20 30 40 50 60 70 80 90 100\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Random cases
+    for _ in range(7):
+        nums = [random.randint(0, 1000) for _ in range(10)]
+        test_cases.append(" ".join(map(str, nums)) + "\n")
+    
+    # Test 11: Edge values
+    test_cases.append("0 1000 500 999 42 84 126 168 210 252\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git81...")

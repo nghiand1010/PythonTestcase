@@ -1,0 +1,76 @@
+# Bài 195: Chia dãy
+
+## Đề bài
+
+Người ta muốn chia một dãy gồm `n` số nguyên:
+
+```text
+a[1], a[2], ..., a[n]
+```
+
+thành chính xác `k` đoạn con liên tiếp, khác rỗng và không giao nhau sao cho mỗi đoạn có tổng phần tử là một số lẻ.
+
+Ví dụ:
+
+- Dãy `[7, 18, 3, 14, 1]` có thể chia thành 3 đoạn có tổng lẻ:
+  - `[7]`
+  - `[18, 3]`
+  - `[14, 1]`
+- Dãy `[1, 2, 3, 4, 5]` thì không thể chia thành 3 đoạn có tổng lẻ.
+
+## Yêu cầu
+
+Bạn được biết hai số nguyên `n`, `k` và dãy `a`.
+
+Hãy cho biết có thể chia dãy cho thành `k` đoạn con liên tiếp không rỗng, không giao nhau hay không. Nếu có, hãy chỉ ra một cách chia.
+
+## Đầu vào
+
+Dòng đầu chứa số nguyên `q` là số lượng vấn đề vào.
+
+Sau đó là `q` truy vấn, mỗi truy vấn gồm 2 dòng:
+
+- Dòng 1 chứa hai số nguyên `n` và `k`;
+- Dòng 2 chứa `n` số nguyên `a[1], a[2], ..., a[n]`.
+
+Dữ liệu đảm bảo tổng các giá trị `n` trong tất cả các truy vấn không vượt quá `10^5`.
+
+## Ràng buộc
+
+```text
+1 ≤ q ≤ 10^4
+1 ≤ k ≤ n ≤ 10^5
+1 ≤ a[i] ≤ 10^9
+```
+
+## Đầu ra
+
+Ứng với mỗi truy vấn:
+
+- Nếu không thể chia dãy ban đầu thành chính xác `k` đoạn con sao cho mỗi đoạn có tổng các phần tử lẻ, in ra `NO`.
+- Nếu có thể, in ra:
+  - Dòng đầu chứa `YES`;
+  - Dòng thứ hai mô tả một cách phân chia bất kỳ bằng `k` số nguyên `r1, r2, ..., rk`, trong đó `rj` là chỉ số phần tử cùng bên phải của đoạn con thứ `j`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3
+5 3
+7 18 3 14 1
+5 4
+1 2 3 4 5
+6 2
+1 2 4 10 2 4
+```
+
+### Đầu ra
+
+```text
+YES
+1 3 5
+NO
+NO
+```

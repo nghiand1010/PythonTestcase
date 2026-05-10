@@ -1,0 +1,63 @@
+# Bài 199: Thi vấn đáp
+
+## Đề bài
+
+Hôm nay sinh viên trường Đại học Byland thi vấn đáp môn triết học.
+
+Giáo sư Vova là người hỏi thi của một nhóm `n` sinh viên. Các học sinh sẽ thực hiện bài thi theo thứ tự từng người một, từ người thứ `1` đến người thứ `n`.
+
+Nội quy của bài thi vấn đáp như sau:
+
+- Sinh viên thứ `i` chọn ngẫu nhiên một mã đề thi;
+- Nếu đề này quá khó với anh ta, anh ta sẽ bỏ về ngay lập tức;
+- Nếu sinh viên thấy đề bài là dễ với mình, anh ta dành chính xác `t[i]` phút để trình bày câu trả lời với giáo sư Vova.
+
+Thời lượng của toàn bộ buổi thi cho tất cả học sinh được ấn định là `m` phút.
+
+Với mỗi sinh viên `i`, hãy tìm số sinh viên ít nhất trong số các sinh viên trước đó cần loại khỏi danh sách để tổng thời gian trả lời của các sinh viên còn lại trước đó và sinh viên `i` không vượt quá `m`.
+
+## Đầu vào
+
+- Dòng đầu tiên chứa hai số nguyên `n` và `m`, lần lượt là số học sinh dự thi và tổng thời gian của buổi thi tính bằng phút.
+- Dòng thứ hai chứa `n` số nguyên `t[1], t[2], ..., t[n]`, trong đó `t[i]` là thời gian trình bày bài thi của sinh viên thứ `i`.
+
+Dữ liệu đảm bảo rằng các giá trị `t[i]` không lớn hơn `m`.
+
+## Ràng buộc
+
+```text
+1 ≤ n, m ≤ 100
+1 ≤ t[i] ≤ m
+```
+
+## Đầu ra
+
+In ra một dòng chứa `n` số nguyên, trong đó số thứ `i` là số học sinh tối thiểu cần bỏ qua trước khi tới lượt sinh viên thứ `i`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+7 15
+1 2 3 4 5 6 7
+```
+
+### Đầu ra
+
+```text
+0 0 0 0 2 3 4
+```
+
+### Đầu vào
+
+```text
+5 100
+80 40 40 60 60
+```
+
+### Đầu ra
+
+```text
+0 1 1 2 3
+```

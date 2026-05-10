@@ -1,0 +1,53 @@
+# Bài 177: Đội cờ
+
+## Đề bài
+
+Có hai đội cờ `A` và `B` thi đấu với nhau.
+
+Mỗi đội có `n` kỳ thủ, mỗi kỳ thủ được biết qua một chỉ số năng lực.
+
+Đội chủ nhà là đội `B`. Đội cờ `B` có quyền lựa chọn cách ghép cặp thi đấu giữa kỳ thủ của đội `A` và đội `B`.
+
+Với mỗi ván đấu:
+
+- Nếu kỳ thủ đội `B` có trình độ cao hơn thì đội `B` được `2` điểm;
+- Nếu hai kỳ thủ có trình độ ngang nhau thì đội `B` được `1` điểm;
+- Nếu kỳ thủ đội `B` thua thì đội `B` được `0` điểm.
+
+## Yêu cầu
+
+Lập trình để đội `B` chọn được các cặp thi đấu sao cho tổng số điểm của đội `B` là cao nhất.
+
+## Đầu vào
+
+- Dòng đầu ghi số nguyên dương `n`.
+- Dòng thứ `i` trong `n` dòng sau ghi hai số nguyên `a[i]`, `b[i]`, lần lượt là trình độ của kỳ thủ thứ `i` của đội `A` và đội `B`.
+
+## Ràng buộc
+
+```text
+1 ≤ n ≤ 10^3
+1 ≤ a[i], b[i] ≤ 100, i = 1..n
+```
+
+## Đầu ra
+
+In ra số nguyên `T` là tổng số điểm cao nhất mà đội `B` có thể đạt được.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+4
+7 8
+5 6
+4 3
+9 4
+```
+
+### Đầu ra
+
+```text
+5
+```

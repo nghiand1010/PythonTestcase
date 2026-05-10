@@ -1,0 +1,12 @@
+```python
+q=int(input())
+for _ in range(q):
+    n=int(input()); a=sorted(map(int,input().split()))
+    b=[]; l=0; r=n-1
+    while l<=r:
+        if l==r: b.append(a[l])
+        else: b.append(a[l]); b.append(a[r])
+        l+=1; r-=1
+    ans=sum(abs(b[i]-b[(i+1)%n]) for i in range(n))
+    print(ans)
+```

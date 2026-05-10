@@ -1,0 +1,51 @@
+# Bài 165: Dãy con liên tiếp các số âm có tổng nhỏ nhất
+
+## Đề bài
+
+Cho dãy `A` gồm `N` số nguyên.
+
+Hãy tìm dãy con liên tiếp gồm toàn các số âm có tổng nhỏ nhất trong dãy `A`.
+
+Nếu dãy không có số âm nào thì in ra `0`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng sau chứa `N` số nguyên là các phần tử của dãy `A`.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ 100
+1 ≤ N ≤ 10^5
+|A[i]| ≤ 10^6, i = 1..N
+```
+
+## Đầu ra
+
+In ra số nguyên `S` là tổng nhỏ nhất của dãy con liên tiếp các số âm tìm được trong `A`.
+
+Nếu dãy không có số âm nào thì in ra `0`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+5
+-1 0 -2 3 -4
+2
+1 2
+```
+
+### Đầu ra
+
+```text
+-4
+0
+```

@@ -1,0 +1,44 @@
+```
+def nhuan(y):
+    if y % 400 == 0:
+        return True
+    if y % 4 == 0 and y % 100 != 0:
+        return True
+    return False
+
+
+y1, y2 = map(int, input().split())
+
+ngay_thang = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+pre = [0]
+
+thu = 1
+dem = 0
+
+for y in range(1, 401):
+    for m in range(12):
+        thu_13 = (thu + 12) % 7
+
+        if thu_13 == 5:
+            dem += 1
+
+        ngay = ngay_thang[m]
+
+        if m == 1 and nhuan(y):
+            ngay = 29
+
+        thu = (thu + ngay) % 7
+
+    pre.append(dem)
+
+
+def tinh(y):
+    so_chu_ky = y // 400
+    du = y % 400
+
+    return so_chu_ky * pre[400] + pre[du]
+
+
+print(tinh(y2) - tinh(y1 - 1))
+```

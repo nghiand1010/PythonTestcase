@@ -50,24 +50,35 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git78
-    TODO: Customize this function based on problem constraints
+    Input: s, n, then n pairs (strength, bonus) - dragon game
+    Constraints: 1 <= s, n, c[i], d[i] <= 10^4
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Simple YES
+    test_cases.append("2 2\n1 1\n2 1\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: Simple NO
+    test_cases.append("1 2\n2 1\n3 1\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Edge case
+    test_cases.append("10 3\n5 3\n7 4\n12 5\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Scaled cases
+    for n in [10, 50, 100, 500, 1000, 5000, 10000]:
+        s = random.randint(1, 10000)
+        dragons = []
+        for _ in range(n):
+            c = random.randint(1, 10000)
+            d = random.randint(1, 10000)
+            dragons.append(f"{c} {d}")
+        test_cases.append(f"{s} {n}\n" + "\n".join(dragons) + "\n")
+    
+    # Test 11: Maximum
+    s = 10000
+    n = 10000
+    dragons = [f"{random.randint(1, 10000)} {random.randint(1, 10000)}" for _ in range(n)]
+    test_cases.append(f"{s} {n}\n" + "\n".join(dragons) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git78...")

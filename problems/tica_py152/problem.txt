@@ -1,0 +1,58 @@
+# Bài 152: Tổng độ lệch lớn nhất
+
+## Đề bài
+
+Cho dãy `N` số nguyên:
+
+```text
+A[1], A[2], ..., A[N]
+```
+
+được xếp thành một vòng tròn. Hãy sắp xếp lại dãy sao cho tổng:
+
+```text
+|A[1] - A[2]| + |A[2] - A[3]| + ... + |A[N] - A[1]|
+```
+
+có giá trị lớn nhất.
+
+## Đầu vào
+
+Dòng đầu tiên chứa một số nguyên biểu thị số bộ dữ liệu cần kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên được phân cách bằng dấu cách biểu thị các phần tử của dãy.
+
+## Ràng buộc
+
+```text
+1 ≤ số bộ dữ liệu ≤ 100
+1 ≤ N ≤ 10^4
+1 ≤ A[i] ≤ 10^6
+Có 60% test ứng với N ≤ 1000
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu, in ra một dòng chứa tổng lớn nhất tìm được theo yêu cầu.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+4
+4 2 1 8
+3
+10 12 15
+```
+
+### Đầu ra
+
+```text
+18
+10
+```

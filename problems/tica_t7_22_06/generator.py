@@ -50,26 +50,26 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_t7_22_06
-    String grows as: length * (2^n), find m-th character
+    Input: a (number on line 1), n (on line 2), m (on line 3)
+    String grows as: a + reverse(a), repeated n times. Find m-th char.
+    Constraints: 1 <= a <= 10^9, 0 <= n <= 20, 1 <= m <= result_length
     """
     test_cases = []
     
     # Test 1-3: Edge cases
-    test_cases.append("123\n0\n1\n")  # n=0, first char
-    test_cases.append("5\n1\n2\n")    # n=1: "55"
-    test_cases.append("7\n2\n5\n")    # n=2: "7777", m > length (should return -1)
+    test_cases.append("123\\n0\\n1\\n")  # n=0, first char
+    test_cases.append("5\\n1\\n2\\n")    # n=1: "55"
+    test_cases.append("7\\n2\\n5\\n")    # n=2: "7777", check valid m
     
     # Test 4-10: Progressive n values
-    test_cases.append("9\n3\n10\n")           # n=3, moderate position
-    test_cases.append("12\n4\n20\n")          # n=4
-    test_cases.append("123\n5\n500\n")        # n=5, larger
-    test_cases.append("456\n6\n1000\n")       # n=6
-    test_cases.append("789\n7\n5000\n")       # n=7
-    test_cases.append("11\n8\n10000\n")       # n=8
-    test_cases.append("99\n9\n50000\n")       # n=9, near max
+    for n in [3, 4, 5, 6, 8, 10, 15]:
+        a = random.randint(1, 100)
+        max_len = len(str(a)) * (2 ** n)
+        m = random.randint(1, min(max_len, 10**6))
+        test_cases.append(f"{a}\\n{n}\\n{m}\\n")
     
-    # Test 11: Random valid case
-    test_cases.append("42\n5\n" + str(random.randint(1, 100)) + "\n")
+    # Test 11: Large case
+    test_cases.append("99\\n18\\n100000\\n")
     
     # Generate and save
     print(f"Generating testcases for tica_t7_22_06...")

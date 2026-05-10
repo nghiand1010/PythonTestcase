@@ -50,24 +50,32 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git77
-    TODO: Customize this function based on problem constraints
+    Input: Multiple test cases: n (0 to end), then n numeric strings
+    Constraints: 1 <= n <= 100, strings are numbers
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Simple case
+    test_cases.append("3\n100\n200\n300\n0\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: Leading zeros
+    test_cases.append("3\n001\n010\n100\n0\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Same numbers
+    test_cases.append("4\n0050\n50\n050\n00050\n0\n")
+    
+    # Test 4-10: Scaled cases
+    all_tests = []
+    for case_count in [5, 10, 20, 30, 50, 80, 100]:
+        n = random.randint(5, case_count)
+        nums = [str(random.randint(0, 10**random.randint(1, 10))) for _ in range(n)]
+        all_tests.append(f"{n}\n" + "\n".join(nums))
+    test_cases.append("\n".join(all_tests) + "\n0\n")
     
     # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    n = 10
+    nums = [str(random.randint(0, 10**20)) for _ in range(n)]
+    test_cases.append(f"{n}\n" + "\n".join(nums) + "\n0\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git77...")

@@ -50,24 +50,32 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git83
-    TODO: Customize this function based on problem constraints
+    Input: n, then n pairs (height, price) - find max frequency cafe
+    Constraints: 1 <= n <= 10^5, 1 <= h, p <= 10^6
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Simple case
+    test_cases.append("5\n5 10\n5 10\n5 10\n6 15\n6 15\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: All different
+    test_cases.append("4\n1 100\n2 200\n3 300\n4 400\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: All same
+    test_cases.append("10\n100 200\n100 200\n100 200\n100 200\n100 200\n100 200\n100 200\n100 200\n100 200\n100 200\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Scaled cases
+    for n in [100, 500, 1000, 5000, 10000, 50000, 100000]:
+        cafes = []
+        for _ in range(n):
+            h = random.randint(1, 1000000)
+            p = random.randint(1, 1000000)
+            cafes.append(f"{h} {p}")
+        test_cases.append(f"{n}\n" + "\n".join(cafes) + "\n")
+    
+    # Test 11: Random with duplicates
+    cafes = [(random.choice([100, 200, 300]), random.choice([50, 100, 150])) for _ in range(1000)]
+    test_cases.append(f"1000\n" + "\n".join(f"{h} {p}" for h, p in cafes) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git83...")

@@ -1,0 +1,7 @@
+```python
+n=int(input()); a=list(map(int,input().split())); pos={} ; ans=(-1,-1)
+for i,x in enumerate(a,1):
+    if -x in pos: ans=(pos[-x],i); break
+    pos[x]=i
+print(*ans)
+```

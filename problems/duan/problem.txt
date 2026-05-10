@@ -1,0 +1,88 @@
+# B: Dự án
+
+---
+
+## Đề bài
+
+Một công ty dự kiến tham gia thực hiện `N` dự án, được đánh số từ `1` đến `N`.
+
+Để thực hiện dự án thứ `i`, công ty cần có số vốn ban đầu **không nhỏ hơn** `V_i`.
+
+Sau khi hoàn thành dự án thứ `i`, công ty sẽ thu hồi toàn bộ vốn đã bỏ ra và đồng thời thu được thêm `L_i` đơn vị lợi nhuận.
+
+Ban đầu, công ty có số vốn là `S`.
+
+Công ty được phép thực hiện các dự án **lần lượt**, theo một thứ tự tùy ý, với điều kiện tại thời điểm bắt đầu mỗi dự án, số vốn hiện có của công ty đáp ứng yêu cầu của dự án đó.
+
+---
+
+## Yêu cầu
+
+Hãy xác định số lượng **lớn nhất** các dự án mà công ty có thể thực hiện.
+
+---
+
+## Input
+
+- Dòng đầu chứa hai số nguyên dương `N` và `S`
+
+```text
+1 ≤ N ≤ 10^5
+1 ≤ S ≤ 10^6
+```
+
+- `N` dòng tiếp theo, dòng thứ `i` chứa hai số nguyên dương `V_i` và `L_i`
+
+```text
+V_i, L_i ≤ 10^6
+```
+
+---
+
+## Output
+
+In ra một số nguyên duy nhất là số lượng lớn nhất các dự án mà công ty có thể thực hiện.
+
+---
+
+## Examples
+
+### Example 1
+
+#### Input
+
+```text
+5 2
+25 19
+1 1
+1 2
+5 5
+10 12
+```
+
+#### Output
+
+```text
+4
+```
+
+---
+
+### Example 2
+
+#### Input
+
+```text
+5 2
+25 19
+3 1
+6 3
+5 3
+12 10
+```
+
+#### Output
+
+```text
+0
+```

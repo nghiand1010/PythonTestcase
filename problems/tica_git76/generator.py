@@ -50,24 +50,34 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git76
-    TODO: Customize this function based on problem constraints
+    Input: Multiple pairs (n, k) until 0 0 - compute n^k mod 1000000007
+    Constraints: 0 <= n, k <= 10^9
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Simple case
+    test_cases.append("2 3\n0 0\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: Multiple queries
+    test_cases.append("5 10\n10 5\n0 0\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Edge cases with 0
+    test_cases.append("0 1\n1 0\n0 0\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Scaled cases
+    test_inputs = []
+    for scale in [100, 1000, 10000, 100000, 1000000, 100000000, 1000000000]:
+        queries = []
+        for _ in range(min(10, 1000000 // scale)):
+            n = random.randint(1, scale)
+            k = random.randint(1, scale)
+            queries.append(f"{n} {k}")
+        queries.append("0 0")
+        test_cases.append("\n".join(queries) + "\n")
+    
+    # Test 11: Random mix
+    queries = ["123 456", "999 1000", "1000000 999999", "0 0"]
+    test_cases.append("\n".join(queries) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git76...")

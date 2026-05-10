@@ -1,0 +1,67 @@
+# Bài 200: Sắp xếp vòng số
+
+## Đề bài
+
+Cho dãy `n` số nguyên:
+
+```text
+a[1], a[2], ..., a[n]
+```
+
+Hãy tìm một cách sắp xếp các số này trên một vòng tròn sao cho mỗi số đều nhỏ hơn tổng hai số liền kề nó.
+
+Ví dụ: Nếu ta có dãy:
+
+```text
+1, 4, 5, 6, 7, 8
+```
+
+thì một cách sắp xếp như hình bên trái trong đề là hợp lệ, còn cách sắp xếp như hình bên phải là không hợp lệ.
+
+Bạn phải trả lời `q` truy vấn độc lập.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `q` (`1 ≤ q ≤ 100`) là số truy vấn.
+
+Tiếp theo là mô tả của `q` truy vấn, mỗi truy vấn gồm 2 dòng:
+
+- Dòng 1 chứa số nguyên dương `n` (`2 ≤ n ≤ 10^3`) là số phần tử của dãy dữ liệu;
+- Dòng 2 chứa `n` số nguyên `a[1], a[2], ..., a[n]`, mô tả dãy số đầu vào.
+
+Các số viết cách nhau một dấu cách.
+
+## Đầu ra
+
+Ứng với mỗi truy vấn:
+
+- Nếu không có cách sắp xếp, in ra thông báo `NO` trên một dòng riêng biệt.
+- Ngược lại, in ra 2 dòng:
+  - Dòng đầu in `YES`;
+  - Dòng sau in ra dãy số theo thứ tự sao cho có thể xếp chúng trên một vòng tròn thỏa mãn điều kiện đã nêu.
+
+Bạn chỉ cần in một cách sắp xếp bất kỳ thỏa mãn đề bài.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3
+2
+4 3
+5
+1 2 3 4 4
+3
+13 8 5
+```
+
+### Đầu ra
+
+```text
+YES
+3
+YES
+1 2 3 4 4
+NO
+```

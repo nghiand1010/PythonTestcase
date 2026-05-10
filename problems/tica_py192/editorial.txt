@@ -1,0 +1,8 @@
+```python
+n,k=map(int,input().split()); a=list(map(int,input().split())); res=[]
+for x in a:
+    if x in res: continue
+    res.insert(0,x)
+    if len(res)>k: res.pop()
+print(len(res)); print(*res)
+```

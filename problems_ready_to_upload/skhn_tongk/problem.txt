@@ -1,0 +1,64 @@
+# Tổng K số
+
+## Đề bài
+
+Cho dãy số vô hạn có quy luật như sau:
+
+```text
+3, 2, 1, 6, 5, 4, 9, 8, 7, ...
+```
+
+## Yêu cầu
+
+Cho số nguyên dương `K`, hãy tính tổng `K` số hạng đầu tiên của dãy số.
+
+Kết quả cần in ra là số dư khi chia tổng đó cho `2026`.
+
+## Dữ liệu nhập vào từ bàn phím
+
+Gồm một dòng chứa số nguyên dương `K`.
+
+Điều kiện:
+
+```text
+1 ≤ K ≤ 10^9
+```
+
+## Kết quả ghi ra màn hình
+
+In ra một số nguyên duy nhất là kết quả của bài toán, lấy dư theo `2026`.
+
+## Ví dụ
+
+### Input
+
+```text
+5
+```
+
+### Output
+
+```text
+17
+```
+
+## Giải thích
+
+5 số đầu tiên của dãy là:
+
+```text
+3, 2, 1, 6, 5
+```
+
+Tổng là:
+
+```text
+3 + 2 + 1 + 6 + 5 = 17
+```
+
+Sau khi lấy dư `2026`, kết quả vẫn là `17`.
+
+## Ràng buộc
+
+- Có `70%` số test tương ứng với `K ≤ 10^3`.
+- `30%` số test còn lại không có ràng buộc bổ sung.

@@ -50,24 +50,38 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git20
-    TODO: Customize this function based on problem constraints
+    Input: t, then t pairs of 4-digit primes (start, end) - BFS shortest path
+    Constraints: 1 <= t <= 100, 1000 <= primes <= 9999
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Pre-generate some 4-digit primes for testing
+    primes_4d = [1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061,
+                 1063, 1069, 1087, 1091, 1093, 1097, 1103, 1109, 1117, 1123,
+                 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193, 1201, 1213,
+                 2003, 3001, 5003, 7001, 8009, 9001]
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 1: Simple case
+    test_cases.append("1\n1009 1021\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 2: Multiple queries
+    test_cases.append("3\n1009 1021\n1031 1103\n2003 3001\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 3: Harder cases
+    test_cases.append("5\n1009 9001\n1021 8009\n1031 7001\n1103 5003\n2003 3001\n")
+    
+    # Test 4-10: Scaled test counts
+    for t in [10, 15, 20, 30, 50, 80, 100]:
+        queries = []
+        for _ in range(t):
+            start = random.choice(primes_4d)
+            end = random.choice(primes_4d)
+            queries.append(f"{start} {end}")
+        test_cases.append(f"{t}\n" + "\n".join(queries) + "\n")
+    
+    # Test 11: Random
+    queries = [f"{random.choice(primes_4d)} {random.choice(primes_4d)}" for _ in range(50)]
+    test_cases.append(f"50\n" + "\n".join(queries) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git20...")

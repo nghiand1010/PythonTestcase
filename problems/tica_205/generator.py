@@ -50,26 +50,24 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_205
-    Problem has only images - using generic approach
+    Input: n, then n numbers - compute LCM of all numbers
+    Constraints: 1 <= n <= 100, 1 <= numbers <= 10^6
     """
     test_cases = []
     
     # Test 1-3: Edge cases
-    test_cases.append("1\n")
-    test_cases.append("2\n")
-    test_cases.append("5\n")
+    test_cases.append("1\\n12\\n")
+    test_cases.append("2\\n6\\n8\\n")
+    test_cases.append("5\\n2\\n3\\n4\\n5\\n6\\n")
     
     # Test 4-10: Varied cases
-    test_cases.append("10\n")
-    test_cases.append("20\n")
-    test_cases.append("50\n")
-    test_cases.append("100\n")
-    test_cases.append("500\n")
-    test_cases.append("1000\n")
-    test_cases.append("10000\n")
+    for n in [10, 20, 30, 50, 70, 90, 100]:
+        nums = [random.randint(1, min(1000, 10**(n//20))) for _ in range(n)]
+        test_cases.append(f"{n}\\n" + "\\n".join(map(str, nums)) + "\\n")
     
-    # Test 11: Random
-    test_cases.append(f"{random.randint(100, 5000)}\n")
+    # Test 11: Maximum with large numbers
+    nums = [random.randint(1, 1000000) for _ in range(100)]
+    test_cases.append(f"100\\n" + "\\n".join(map(str, nums)) + "\\n")
     
     # Generate and save
     print(f"Generating testcases for tica_205...")

@@ -1,0 +1,98 @@
+# Bài 1: CHU KỲ THẾ KỶ
+
+## Bài toán
+
+Lịch Gregory được thiết kế để lặp lại cấu trúc thứ trong tuần một cách chính xác sau mỗi chu kỳ 400 năm, tương đương với `146097` ngày.
+
+Cho biết ngày `01/01/0001` là **Thứ Hai**.
+
+Một nhà du hành thời gian nhảy đến tương lai `N` ngày kể từ ngày `01/01/0001`.
+
+Hãy cho biết ngày đó là thứ mấy?
+
+---
+
+## Dữ liệu vào
+
+Một số nguyên duy nhất `N`.
+
+Điều kiện:
+
+```text
+1 <= N <= 10^18
+```
+
+---
+
+## Kết quả
+
+In ra một số nguyên đại diện cho thứ trong tuần:
+
+```text
+0: Chủ nhật
+1: Thứ hai
+2: Thứ ba
+3: Thứ tư
+4: Thứ năm
+5: Thứ sáu
+6: Thứ bảy
+```
+
+---
+
+## Ví dụ 1
+
+### Input
+
+```text
+10
+```
+
+### Output
+
+```text
+4
+```
+
+### Giải thích
+
+Ngày `01/01/0001` là **Thứ Hai**.
+
+Sau `10` ngày, ngày đó là **Thứ Năm**.
+
+---
+
+## Ví dụ 2
+
+### Input
+
+```text
+1000000000000
+```
+
+### Output
+
+```text
+3
+```
+
+---
+
+## Ràng buộc
+
+- 60% số test có `N <= 10^7`
+- 40% số test có `N <= 10^18`
+
+---
+
+## Gợi ý
+
+Sử dụng phép toán:
+
+```text
+(1 + N) % 7
+```
+
+Kết quả của phép chia lấy dư này chính là đáp án cần tìm.
+
+Với `N` cực lớn, Python vẫn xử lý số nguyên lớn rất nhanh.

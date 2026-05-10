@@ -1,0 +1,56 @@
+# Bài 181: Truy vấn tổng
+
+## Đề bài
+
+Cho một dãy `N` số nguyên:
+
+```text
+A1, A2, ..., AN
+```
+
+Hãy trả lời `Q` truy vấn. Mỗi truy vấn yêu cầu tính tổng các phần tử liên tiếp thuộc đoạn từ `l` đến `r` trong dãy `A`.
+
+## Đầu vào
+
+- Dòng đầu tiên chứa hai số nguyên `N` và `Q`.
+- Dòng thứ hai chứa `N` số nguyên `A1, A2, ..., AN`.
+- Dòng thứ `i` trong `Q` dòng tiếp theo chứa truy vấn thứ `i`, gồm hai số nguyên `l`, `r`.
+
+## Ràng buộc
+
+```text
+1 ≤ N, Q ≤ 10^5
+|Ai| ≤ 10^3
+1 ≤ l ≤ r ≤ N
+```
+
+## Đầu ra
+
+In ra `Q` dòng, dòng thứ `i` chứa câu trả lời truy vấn thứ `i`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+5 3
+1 3 -4 5 -2
+1 4
+2 5
+3 3
+```
+
+### Đầu ra
+
+```text
+5
+2
+-4
+```
+
+## Giải thích
+
+Dãy có 5 phần tử và 3 truy vấn:
+
+- Truy vấn 1 tính tổng các phần tử từ 1 đến 4: `1 + 3 + (-4) + 5 = 5`;
+- Tương tự ta được kết quả của 2 truy vấn còn lại là `2` và `-4`.

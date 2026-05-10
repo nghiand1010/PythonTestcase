@@ -1,0 +1,49 @@
+# Bài 186: Thành phố đẹp
+
+## Đề bài
+
+Ở thành phố NiceCity có `N` ngôi nhà nằm cách đều nhau trên một đường thẳng và được đánh số từ `1` đến `N` từ trái sang phải.
+
+Hai ngôi nhà liền kề nhau cách nhau `1` đơn vị.
+
+Ngôi nhà thứ `i` được sơn bằng màu `C[i]`.
+
+Vova muốn biết khoảng cách lớn nhất giữa hai ngôi nhà có màu khác nhau.
+
+## Đầu vào
+
+- Dòng đầu ghi số lượng ngôi nhà `N`.
+- Dòng thứ hai chứa `N` số nguyên, mô tả màu của các ngôi nhà theo thứ tự từ trái sang phải.
+
+## Ràng buộc
+
+```text
+1 ≤ N ≤ 3 × 10^5
+```
+
+## Đầu ra
+
+In ra một số nguyên duy nhất là khoảng cách lớn nhất tìm được.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+5
+1 2 2 2 3
+```
+
+### Đầu ra
+
+```text
+4
+```
+
+## Giải thích
+
+Ngôi nhà thứ `1` và thứ `5` khác màu nhau và xa nhau nhất với khoảng cách:
+
+```text
+5 - 1 = 4
+```

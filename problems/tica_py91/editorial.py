@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_py91
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+def nt(n):
+    if n < 2:
+        return False
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+t = int(input())
+for _ in range(t):
+    a, b = map(int, input().split())
+    c = 1
+    while not nt(a + b + c):
+        c += 1
+    print(c)

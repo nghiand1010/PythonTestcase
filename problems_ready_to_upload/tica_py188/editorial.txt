@@ -1,0 +1,11 @@
+```python
+q=int(input())
+for _ in range(q):
+    n=int(input()); p=list(map(int,input().split())); ans=[0]*n; seen=[False]*n
+    for i in range(n):
+        if not seen[i]:
+            cyc=[]; j=i
+            while not seen[j]: seen[j]=True; cyc.append(j); j=p[j]-1
+            for v in cyc: ans[v]=len(cyc)
+    print(*ans)
+```

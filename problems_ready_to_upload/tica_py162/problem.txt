@@ -1,0 +1,47 @@
+# Bài 162: Người hâm mộ
+
+## Đề bài
+
+Sơn Tùng M-TP có rất nhiều người hâm mộ. Giả sử khoảng thời gian Sơn Tùng chỉ đủ để ký tặng cho `T` người hâm mộ.
+
+Mỗi người hâm mộ được biết bởi hai thông tin:
+
+- `name`: tên người hâm mộ;
+- `points`: điểm cộng.
+
+Sơn Tùng muốn ưu tiên ký tặng cho những người có điểm cộng cao hơn. Nếu nhiều người có cùng điểm cộng thì ưu tiên người có tên nhỏ hơn theo thứ tự từ điển.
+
+## Đầu vào
+
+- Dòng đầu chứa hai số nguyên `N` và `T`.
+- `N` dòng tiếp theo, mỗi dòng chứa thông tin về người hâm mộ thứ `i`, gồm `name` và `points`.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ N ≤ 10^5
+1 ≤ |name| ≤ 20
+1 ≤ points ≤ 10^9
+```
+
+## Đầu ra
+
+In ra `T` dòng, mỗi dòng chứa tên một người hâm mộ theo trật tự ưu tiên đã yêu cầu.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3 2
+Hai 3
+Hang 3
+Nam 5
+```
+
+### Đầu ra
+
+```text
+Nam
+Hai
+```

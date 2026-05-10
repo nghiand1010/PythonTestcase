@@ -1,0 +1,46 @@
+# Bài 178: Tần số
+
+## Đề bài
+
+Cho dãy `A` gồm `N` số nguyên:
+
+```text
+A1, A2, ..., AN
+```
+
+Tần số của một số là số lần xuất hiện của số đó trong dãy.
+
+## Yêu cầu
+
+Hãy in ra các số có tần số xuất hiện nhiều nhất.
+
+## Đầu vào
+
+- Dòng đầu chứa số nguyên dương `N`.
+- Dòng thứ hai chứa `N` số nguyên `A1, A2, ..., AN`.
+
+## Ràng buộc
+
+```text
+1 ≤ N ≤ 10^5
+|A[i]| ≤ 100, i = 1..N
+```
+
+## Đầu ra
+
+In ra trên cùng một dòng các số có tần số xuất hiện nhiều nhất theo trật tự giá trị tăng dần của mỗi số đó.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+10
+1 1 2 7 2 2 1 3 7 7
+```
+
+### Đầu ra
+
+```text
+1 2 7
+```

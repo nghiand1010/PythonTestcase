@@ -50,7 +50,7 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git101
-    Input: Multiple pairs (a, b) until a=0 b=0 - count special numbers in range
+    Input: Multiple pairs (a, b) until a=0 b=0 - count special squares in range
     Constraints: 1 <= a < b <= 10^9
     """
     test_cases = []
@@ -61,24 +61,24 @@ def generate_testcases():
     # Test 2: Small cases
     test_cases.append("1 100\n100 1000\n0 0\n")
     
-    # Test 3: Edge cases
-    test_cases.append("1 1000000\n0 0\n")
+    # Test 3: Edge cases with multiple queries
+    test_cases.append("1 50\n50 200\n200 500\n0 0\n")
     
-    # Test 4: Medium values (100-1000)
-    test_cases.append("10 500\n500 2000\n0 0\n")
+    # Test 4: Medium values
+    test_cases.append("10 500\n500 2000\n2000 10000\n0 0\n")
     
-    # Test 5-7: Medium cases (10^3-10^6)
-    test_cases.append("100 10000\n10000 100000\n0 0\n")
-    test_cases.append("1000 100000\n100000 1000000\n0 0\n")
-    test_cases.append("10000 500000\n500000 1000000\n0 0\n")
+    # Test 5-7: Large cases
+    test_cases.append("1 10000\n10000 100000\n0 0\n")
+    test_cases.append("100000 1000000\n0 0\n")
+    test_cases.append("1000000 10000000\n0 0\n")
     
-    # Test 8-10: Large cases (near 10^9)
-    test_cases.append("1 10000000\n10000000 100000000\n0 0\n")
-    test_cases.append("100000 500000000\n500000000 900000000\n0 0\n")
+    # Test 8-10: Very large cases
+    test_cases.append("10000000 100000000\n0 0\n")
+    test_cases.append("100000000 500000000\n0 0\n")
     test_cases.append("1 1000000000\n0 0\n")
     
-    # Test 11: Random medium case
-    test_cases.append("12345 67890\n100000 500000\n0 0\n")
+    # Test 11: Random mixed queries
+    test_cases.append("12345 67890\n100000 500000\n1000 5000\n0 0\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git101...")

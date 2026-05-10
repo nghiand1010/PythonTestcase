@@ -1,0 +1,46 @@
+# Bài 99: Thừa số lớn nhất
+
+## Đề bài
+
+Cho số nguyên dương `n`, tìm thừa số nguyên tố lớn nhất của `n` trong dãy phân tích nguyên tố của `n`.
+
+Ví dụ:
+
+- `n = 4 = 2^2` nên thừa số nguyên tố lớn nhất là `2`;
+- `n = 14 = 2 × 7` nên thừa số nguyên tố lớn nhất là `7`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu vào kiểm tra.
+
+Mỗi bộ dữ liệu vào gồm một dòng chứa số nguyên dương `n`.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 100
+1 < n ≤ 10^10
+```
+
+## Đầu ra
+
+In ra `T` dòng, mỗi dòng in ra thừa số nguyên tố lớn nhất của `n`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3
+6
+15
+999999967
+```
+
+### Đầu ra
+
+```text
+3
+5
+999999967
+```

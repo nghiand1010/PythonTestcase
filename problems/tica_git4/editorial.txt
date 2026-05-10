@@ -1,7 +1,0 @@
-import math
-
-X = int(input())
-Y = int(input())
-H = int(input())
-
-print(math.ceil(H / (X - Y)))

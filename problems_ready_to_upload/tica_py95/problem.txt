@@ -1,0 +1,55 @@
+# Bài 95: Phân tích thừa số nguyên tố
+
+## Đề bài
+
+Phân tích số tự nhiên `N` thành tích các thừa số nguyên tố.
+
+Ví dụ:
+
+```text
+N = 100 = 2^2 × 5^2
+N = 35 = 3^1 × 5^1
+```
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu vào kiểm tra.
+
+Mỗi bộ dữ liệu vào gồm một dòng chứa số nguyên dương `N`.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 100
+0 < N ≤ 10^5
+```
+
+## Đầu ra
+
+In ra `T` dòng.
+
+Mỗi dòng chứa một dãy gồm nhiều cặp số liên tiếp. Trong đó:
+
+- Số đứng trước là cơ số;
+- Số đứng sau là số mũ.
+
+Mỗi cặp biểu diễn một thừa số nguyên tố với số mũ trong phân tích của `N`.
+
+Xem ví dụ mẫu để rõ hơn về định dạng đầu ra.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+100
+35
+```
+
+### Đầu ra
+
+```text
+2 2 5 2
+5 1 7 1
+```

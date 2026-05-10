@@ -50,24 +50,26 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git71
-    TODO: Customize this function based on problem constraints
+    Input: n - check if it's sum of two triangular numbers
+    Constraints: 1 <= n <= 10^9
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Minimum YES case
+    test_cases.append("2\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: Small YES
+    test_cases.append("4\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Small NO
+    test_cases.append("5\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Scaled cases
+    for scale in [100, 1000, 10000, 100000, 1000000, 10000000, 100000000]:
+        test_cases.append(f"{scale}\n")
+    
+    # Test 11: Near maximum
+    test_cases.append("1000000000\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git71...")

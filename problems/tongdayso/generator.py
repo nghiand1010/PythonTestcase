@@ -50,28 +50,29 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tongdayso
-    Two inputs n and m
+    Input: n (line 1), m (line 2) - compute sum formula
+    Constraints: 1 <= m <= n <= 10^9
     """
     test_cases = []
     
     # Test 1-3: Edge cases
-    test_cases.append("6\n6\n")     # Sample 1 (output: 21)
-    test_cases.append("6\n3\n")     # Sample 2 (output: 9)
-    test_cases.append("1\n1\n")     # Minimal
+    test_cases.append("6\\n6\\n")     # Sample 1 (output: 21)
+    test_cases.append("6\\n3\\n")     # Sample 2 (output: 9)
+    test_cases.append("1\\n1\\n")     # Minimal
     
     # Test 4-10: Various combinations
-    test_cases.append("10\n5\n")           # n=10, m=5
-    test_cases.append("100\n50\n")         # n=100, m=50
-    test_cases.append("1000\n500\n")       # n=1000, m=500
-    test_cases.append("10000\n7777\n")     # n=10^4
-    test_cases.append("100000\n55555\n")   # n=10^5
-    test_cases.append("1000000\n333333\n") # n=10^6
-    test_cases.append("10000000\n5555555\n") # n=10^7
+    test_cases.append("10\\n5\\n")           # n=10, m=5
+    test_cases.append("100\\n50\\n")         # n=100, m=50
+    test_cases.append("1000\\n500\\n")       # n=1000, m=500
+    test_cases.append("10000\\n7777\\n")     # n=10^4
+    test_cases.append("100000\\n55555\\n")   # n=10^5
+    test_cases.append("1000000\\n333333\\n") # n=10^6
+    test_cases.append("1000000000\\n500000000\\n") # n=10^9
     
     # Test 11: Random
-    n = random.randint(10**4, 10**7)
+    n = random.randint(10**6, 10**8)
     m = random.randint(1, n)
-    test_cases.append(f"{n}\n{m}\n")
+    test_cases.append(f"{n}\\n{m}\\n")
     
     # Generate and save
     print(f"Generating testcases for tongdayso...")

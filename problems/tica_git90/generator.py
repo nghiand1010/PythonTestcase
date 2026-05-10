@@ -50,24 +50,35 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git90
-    TODO: Customize this function based on problem constraints
+    Input: n, then n lines (name + 3 scores) - find best and worst student
+    Constraints: 1 <= n <= 1000, names are strings, scores are ints
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: Simple case
+    test_cases.append("3\nAlice 10 20 30\nBob 15 25 35\nCharlie 5 10 15\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: Same total scores
+    test_cases.append("2\nAlex 10 10 10\nBen 5 15 10\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Edge case
+    test_cases.append("5\nA 100 100 100\nB 50 50 50\nC 75 75 75\nD 25 25 25\nE 90 90 90\n")
     
-    # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    # Test 4-10: Scaled cases
+    names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace', 'Henry', 'Ivy', 'Jack']
+    for n in [10, 50, 100, 200, 500, 800, 1000]:
+        students = []
+        for i in range(n):
+            name = f"Student{i}" if i >= len(names) else names[i % len(names)]
+            s1 = random.randint(0, 100)
+            s2 = random.randint(0, 100)
+            s3 = random.randint(0, 100)
+            students.append(f"{name} {s1} {s2} {s3}")
+        test_cases.append(f"{n}\n" + "\n".join(students) + "\n")
+    
+    # Test 11: Random
+    students = [f"S{i} {random.randint(0,100)} {random.randint(0,100)} {random.randint(0,100)}" for i in range(100)]
+    test_cases.append(f"100\n" + "\n".join(students) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git90...")

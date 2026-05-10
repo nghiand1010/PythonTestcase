@@ -50,24 +50,28 @@ def save_testcase(test_num, input_data, output_data):
 def generate_testcases():
     """
     Generate testcases for tica_git24
-    TODO: Customize this function based on problem constraints
+    Input: n, then n numbers - count changes between adjacent elements
+    Constraints: 1 <= n <= 10^5, 1 <= a[i] <= 10^9
     """
     test_cases = []
     
-    # Test 1: Minimum case
-    test_cases.append("1\n1\n")
+    # Test 1: All same - 0 changes
+    test_cases.append("3\n5 5 5\n")
     
-    # Test 2-3: Small cases
-    test_cases.append("2\n1 2\n")
-    test_cases.append("3\n1 2 3\n")
+    # Test 2: All different
+    test_cases.append("5\n1 2 3 4 5\n")
     
-    # Test 4-10: Varied cases (TODO: customize based on constraints)
-    for i in range(4, 11):
-        n = 10 ** (i - 2)  # Scale from 100 to 10^8
-        test_cases.append(f"{n}\n" + " ".join(str(random.randint(1, n)) for _ in range(min(n, 1000))) + "\n")
+    # Test 3: Alternating pattern
+    test_cases.append("10\n1 2 1 2 1 2 1 2 1 2\n")
+    
+    # Test 4-10: Scaled cases
+    for scale in [100, 1000, 5000, 10000, 30000, 60000, 100000]:
+        nums = [random.randint(1, min(scale, 10**9)) for _ in range(scale)]
+        test_cases.append(f"{scale}\n" + " ".join(map(str, nums)) + "\n")
     
     # Test 11: Random case
-    test_cases.append("5\n1 2 3 4 5\n")
+    nums = [random.randint(1, 10000) for _ in range(5000)]
+    test_cases.append(f"5000\n" + " ".join(map(str, nums)) + "\n")
     
     # Generate and save
     print(f"Generating testcases for tica_git24...")

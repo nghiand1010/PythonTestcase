@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_py90
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+q = int(input())
+for _ in range(q):
+    n = int(input())
+    ans = 0
+    for p, c in [(2, 1), (3, 2), (5, 3)]:
+        while n % p == 0:
+            n //= p
+            ans += c
+    print(ans if n == 1 else -1)

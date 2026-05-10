@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for skhn_chianhom
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+# Cách 1: nhóm (a, b) và nhóm (c, d)
+x1 = abs((a + b) - (c + d))
+
+# Cách 2: nhóm (a, c) và nhóm (b, d)
+x2 = abs((a + c) - (b + d))
+
+# Cách 3: nhóm (a, d) và nhóm (b, c)
+x3 = abs((a + d) - (b + c))
+
+# Lấy độ chênh lệch nhỏ nhất
+kq = min(x1, x2, x3)
+
+print(kq)

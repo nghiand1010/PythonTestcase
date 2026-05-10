@@ -1,0 +1,70 @@
+# Bài 180: Phủ đoạn thẳng
+
+## Đề bài
+
+Cho `n` đoạn thẳng nằm trên trục `Ox`.
+
+Đoạn thứ `i` bắt đầu từ điểm `L[i]` và kết thúc tại điểm `R[i]`.
+
+Hãy tìm đoạn thẳng nào trong các đoạn đã cho có thể phủ tất cả các đoạn còn lại.
+
+Đoạn `[a, b]` được gọi là phủ đoạn `[c, d]` nếu:
+
+```text
+a ≤ c ≤ d ≤ b
+```
+
+## Đầu vào
+
+- Dòng đầu là số nguyên `n`.
+- Dòng thứ `i` trong `n` dòng tiếp theo chứa hai số nguyên `L[i]`, `R[i]`, biểu diễn đoạn thứ `i`.
+
+Các đoạn thẳng được đánh số bắt đầu từ `1` theo thứ tự đầu vào.
+
+## Ràng buộc
+
+```text
+1 ≤ n ≤ 100
+1 ≤ L[i] ≤ R[i] ≤ 10^9, i = 1..n
+```
+
+## Đầu ra
+
+In ra một số nguyên duy nhất là đáp án của bài toán.
+
+Dữ liệu đảm bảo không có hai đoạn thẳng nào có hai đầu mút trùng nhau.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3
+1 1
+2 2
+3 3
+```
+
+### Đầu ra
+
+```text
+-1
+```
+
+### Đầu vào
+
+```text
+6
+1 5
+2 3
+1 10
+7 10
+7 7
+10 10
+```
+
+### Đầu ra
+
+```text
+3
+```

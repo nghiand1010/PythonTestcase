@@ -1,0 +1,53 @@
+# Bài 155: Bộ 3 có thứ tự
+
+## Đề bài
+
+Cho một dãy `A` gồm `N` số nguyên.
+
+Hãy kiểm tra trong `A` có 3 phần tử bất kỳ nào đó thỏa mãn điều kiện:
+
+```text
+A[i] < A[j] < A[k] với i < j < k
+```
+
+Nếu có thì in ra thông báo `YES`, ngược lại in ra thông báo `NO`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa một số nguyên biểu thị số bộ dữ liệu cần kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên cách nhau một dấu cách biểu thị các phần tử của `A`.
+
+## Ràng buộc
+
+```text
+1 ≤ số bộ dữ liệu ≤ 100
+1 ≤ N ≤ 10^5
+1 ≤ A[i] ≤ 10^6
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu, in ra một dòng chứa kết quả tương ứng.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+5
+1 2 3 4 5
+5
+5 4 3 2 1
+```
+
+### Đầu ra
+
+```text
+YES
+NO
+```

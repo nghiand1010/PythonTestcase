@@ -1,0 +1,63 @@
+# Bài 100: Tổng các số nguyên tố đối xứng
+
+## Đề bài
+
+Cho hai số nguyên dương `l`, `r`, viết chương trình tính tổng các số nguyên tố đối xứng thuộc đoạn `[l, r]`.
+
+Ví dụ:
+
+- `l = 1, r = 10`, các số nguyên tố thuộc đoạn `[1, 10]` gồm `2, 3, 5, 7` và đều là số đối xứng, vì vậy câu trả lời là:
+
+```text
+2 + 3 + 5 + 7 = 17
+```
+
+- `l = 101, r = 200`, các số nguyên tố thuộc đoạn `[101, 200]` gồm:
+
+```text
+101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199
+```
+
+Trong số đó chỉ có các số:
+
+```text
+101, 131, 151, 181, 191
+```
+
+là đối xứng.
+
+Vậy tổng của chúng là `755`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu vào kiểm tra.
+
+Mỗi bộ dữ liệu vào gồm một dòng chứa hai số nguyên dương `l`, `r`.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 200
+0 < l, r ≤ 10^5
+```
+
+## Đầu ra
+
+In ra `T` dòng, mỗi dòng in ra kết quả tương ứng với đầu vào.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+1 10
+101 200
+```
+
+### Đầu ra
+
+```text
+17
+755
+```

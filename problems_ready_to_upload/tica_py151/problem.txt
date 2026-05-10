@@ -1,0 +1,67 @@
+# Bài 151: Tổng nhỏ nhất của các tích
+
+## Đề bài
+
+Cho hai dãy `N` số nguyên:
+
+```text
+A[1], A[2], ..., A[N]
+B[1], B[2], ..., B[N]
+```
+
+Hãy sắp xếp lại hai dãy để sau khi sắp xếp có tổng:
+
+```text
+T = A[1] × B[1] + A[2] × B[2] + ... + A[N] × B[N]
+```
+
+có giá trị nhỏ nhất.
+
+## Đầu vào
+
+Dòng đầu tiên chứa một số nguyên biểu thị số bộ dữ liệu cần kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên `A[1], A[2], ..., A[N]`;
+- Dòng thứ ba chứa `N` số nguyên `B[1], B[2], ..., B[N]`.
+
+## Ràng buộc
+
+```text
+1 ≤ số bộ dữ liệu ≤ 100
+1 ≤ N ≤ 10^5
+1 ≤ A[i], B[i] ≤ 10^5
+Có 60% test ứng với N ≤ 1000
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu, in ra một dòng chứa tổng `T` nhỏ nhất tính được theo yêu cầu.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+3
+3 1 1
+6 5 4
+5
+6 1 9 5 4
+3 4 8 2 4
+```
+
+### Đầu ra
+
+```text
+23
+80
+```
+
+## Giải thích
+
+- Test 1: `1 × 6 + 1 × 5 + 3 × 4 = 23`.
+- Test 2: `2 × 9 + 3 × 6 + 4 × 5 + 4 × 4 + 8 × 1 = 80`.

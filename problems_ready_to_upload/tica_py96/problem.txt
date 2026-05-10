@@ -1,0 +1,47 @@
+# Bài 96: Thừa số nguyên tố thứ K
+
+## Đề bài
+
+Cho hai số `n` và `k`, in ra thừa số nguyên tố thứ `k` trong phân tích thừa số nguyên tố của `n`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu vào kiểm tra.
+
+Mỗi bộ dữ liệu vào gồm một dòng chứa hai số nguyên dương `n`, `k` cách nhau một dấu cách.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 100
+0 < n ≤ 10^9
+0 < k ≤ 50
+```
+
+## Đầu ra
+
+In ra `T` dòng, mỗi dòng in ra thừa số nguyên tố thứ `k` trong phân tích thừa số nguyên tố của `n`.
+
+Nếu `k` lớn hơn số lượng các thừa số nguyên tố của `n` thì in ra `-1`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+225 2
+81 5
+```
+
+### Đầu ra
+
+```text
+3
+-1
+```
+
+## Giải thích
+
+- Test 1: `n = 225` và `k = 2`, `225 = 3 × 3 × 5 × 5`. Thừa số nguyên tố thứ `2` là `3`.
+- Test 2: `n = 81` và `k = 5`, `81 = 3 × 3 × 3 × 3`. Vì `k = 5` lớn hơn số lượng các thừa số nguyên tố của `81`, do đó in ra `-1`.

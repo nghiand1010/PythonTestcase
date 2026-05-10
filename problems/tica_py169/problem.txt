@@ -1,0 +1,52 @@
+# Bài 169: Dãy con tăng liên kề dài nhất và có tổng nguyên tố lớn nhất
+
+## Đề bài
+
+Cho dãy `A` gồm `N` số nguyên.
+
+Hãy tìm dãy con tăng liên kề dài nhất trong `A`.
+
+Nếu có nhiều dãy con tăng liên kề dài nhất, hãy chọn dãy có tổng các phần tử là số nguyên tố lớn nhất.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng sau chứa `N` số nguyên là các phần tử của dãy `A`.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ 100
+1 ≤ N ≤ 10^5
+1 ≤ A[i] ≤ 10^6, i = 1..N
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu test, in ra một dòng chứa độ dài dãy con tăng liên kề dài nhất và tổng các số nguyên tố trong dãy đó.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+3
+9
+4 2 3 5 1 6 7 8 9
+10
+2 3 5 7 4 1 6 5 4 8
+5
+2 2 2 2 2
+```
+
+### Đầu ra
+
+```text
+5 7
+4 17
+1 2
+```

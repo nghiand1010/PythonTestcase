@@ -1,0 +1,49 @@
+# Bài 157: Vị trí cân bằng
+
+## Đề bài
+
+Cho một dãy `A` gồm `N` số nguyên được đánh số từ `1` đến `N`.
+
+Hãy tìm trong dãy `A` vị trí cân bằng đầu tiên từ trái sang phải.
+
+Vị trí `i` được gọi là vị trí cân bằng nếu tổng các phần tử đứng bên trái vị trí `i` bằng tổng các phần tử đứng bên phải vị trí `i`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` biểu thị số bộ dữ liệu cần kiểm tra.
+
+Trong đó, mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên cách nhau một dấu cách, biểu thị các phần tử của dãy `A`.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ 100
+1 ≤ N ≤ 10^5
+0 ≤ A[i] ≤ 10^9, i = 1..N
+```
+
+## Đầu ra
+
+Với mỗi bộ dữ liệu, in ra một dòng chứa vị trí cân bằng tìm được. Nếu không có vị trí nào thỏa mãn thì in ra `-1`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+1
+1
+5
+1 3 5 2 2
+```
+
+### Đầu ra
+
+```text
+1
+3
+```

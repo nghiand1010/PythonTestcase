@@ -1,0 +1,60 @@
+# Bài 173: Dãy con liên tiếp có giá trị trung bình lớn nhất
+
+## Đề bài
+
+Cho dãy số nguyên:
+
+```text
+A[1], A[2], ..., A[N]
+```
+
+Tìm dãy con liên tiếp `A[L], A[L + 1], ..., A[R]` trong dãy sao cho giá trị trung bình của dãy con là lớn nhất.
+
+Giá trị trung bình của dãy con được tính bằng công thức:
+
+```text
+(A[L] + A[L + 1] + ... + A[R]) / (R - L + 1)
+```
+
+Nếu có nhiều dãy con như vậy thì hãy tìm dãy dài nhất.
+
+## Đầu vào
+
+- Dòng đầu chứa số nguyên `N` là số phần tử của dãy `A`.
+- Dòng thứ hai chứa `N` số nguyên cách nhau một dấu cách là các phần tử của `A`.
+
+## Ràng buộc
+
+```text
+1 ≤ N ≤ 10^5
+0 ≤ A[i] ≤ 10^9, i = 1..N
+```
+
+## Đầu ra
+
+In ra một số nguyên là số phần tử của dãy con liên tiếp dài nhất và có giá trị trung bình lớn nhất có thể.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+5
+6 1 6 6 0
+```
+
+### Đầu ra
+
+```text
+2
+```
+
+## Giải thích
+
+Dãy con liên tiếp dài nhất có giá trị trung bình lớn nhất là dãy:
+
+```text
+6 6
+```
+
+Dãy này gồm `2` phần tử và có giá trị trung bình bằng `6`.

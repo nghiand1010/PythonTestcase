@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for min_taudien
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+n = int(input())
+
+khach = 0
+kq = 0
+
+for i in range(n):
+    a, b = map(int, input().split())
+
+    khach = khach - a
+    khach = khach + b
+
+    if khach > kq:
+        kq = khach
+
+print(kq)

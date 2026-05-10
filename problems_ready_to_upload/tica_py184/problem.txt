@@ -1,0 +1,66 @@
+# Bài 184: Những con bò băng qua đường
+
+## Đề bài
+
+Trong nông trại có chuyện bởi vì: "Tại sao con gà thích chạy qua đường?" và đó đã bị xe cán. Vấn đề này đã được nghiên cứu đủ để các chuyên gia rút ra kết luận là có một số "những con bò cũng thích chạy ngang đường".
+
+Bác nông dân John nhận thấy tầm quan trọng của vấn đề này và theo dõi vị trí của các con bò.
+
+Mỗi quan sát ghi lại:
+
+- Số hiệu của một con bò;
+- Vị trí của con bò so với đường, là `0` hoặc `1`.
+
+Nếu trong các quan sát, cùng một con bò xuất hiện ở hai phía khác nhau của đường, ta coi con bò đó đã băng qua đường một lần.
+
+## Yêu cầu
+
+Dựa trên dữ liệu quan sát, hãy đếm tổng số lượt bò băng qua đường.
+
+## Đầu vào
+
+- Dòng đầu ghi số lượng quan sát `N`.
+- Mỗi dòng trong `N` dòng tiếp theo chứa một quan sát, gồm:
+  - Số hiệu của con bò;
+  - Vị trí của con bò so với con đường.
+
+Vị trí được ghi là:
+
+- `0`: ở bên này đường;
+- `1`: ở bên kia đường.
+
+## Ràng buộc
+
+```text
+1 ≤ N ≤ 10^5
+```
+
+## Đầu ra
+
+In ra tổng số lần bò băng qua đường.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+8
+3 1
+3 0
+6 0
+2 1
+4 1
+3 0
+4 0
+3 1
+```
+
+### Đầu ra
+
+```text
+3
+```
+
+## Giải thích
+
+Có bò `3` chạy ngang qua đường hai lần và bò `4` chạy ngang qua đường một lần. Tổng cộng có `3` lượt băng qua đường.

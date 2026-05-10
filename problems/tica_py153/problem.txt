@@ -1,0 +1,47 @@
+# Bài 153: Sắp xếp mảng 0-1
+
+## Đề bài
+
+Cho dãy `N` số nguyên `A[1], A[2], ..., A[N]`, trong đó mỗi phần tử có giá trị trong phạm vi từ `0` đến `2`.
+
+Hãy sắp xếp dãy theo trật tự tăng dần.
+
+## Đầu vào
+
+Dòng đầu tiên chứa một số nguyên biểu thị số bộ dữ liệu cần kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên được phân cách bằng dấu cách biểu thị các phần tử của dãy đã cho.
+
+## Ràng buộc
+
+```text
+1 ≤ số bộ dữ liệu ≤ 10
+1 ≤ N ≤ 10^6
+0 ≤ A[i] ≤ 2
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu, in ra một dòng chứa dãy đã sắp xếp tăng dần.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+5
+0 2 1 2 0
+3
+0 1 0
+```
+
+### Đầu ra
+
+```text
+0 0 1 2 2
+0 0 1
+```

@@ -1,0 +1,56 @@
+# Bài 175: Bộ ba có tích lớn nhất
+
+## Đề bài
+
+Cho dãy số nguyên gồm `n` phần tử:
+
+```text
+a1, a2, ..., an
+```
+
+Nhiệm vụ của bạn là phải tìm tích lớn nhất của ba số trong dãy đã cho.
+
+## Đầu vào
+
+- Dòng đầu tiên chứa số nguyên `n`.
+- Dòng thứ hai chứa `n` số nguyên `a1, a2, ..., an`.
+
+## Ràng buộc
+
+```text
+3 ≤ n ≤ 100
+|ai| ≤ 100, i = 1..n
+Có 70% test tất cả các phần tử trong dãy đều dương hoặc đều âm.
+```
+
+## Đầu ra
+
+In ra một số nguyên duy nhất là tích lớn nhất tìm được của 3 số.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+6
+5 2 10 1 3 2
+```
+
+### Đầu ra
+
+```text
+150
+```
+
+### Đầu vào
+
+```text
+4
+3 -3 4 -1
+```
+
+### Đầu ra
+
+```text
+12
+```

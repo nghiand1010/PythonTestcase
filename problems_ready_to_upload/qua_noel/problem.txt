@@ -1,0 +1,31 @@
+# Phát quà Noel
+
+Noel sắp đến, ông già Noel cần chuẩn bị quà để đi phát quà cho các nhà. Với hi vọng có thể sớm về Bắc Cực để đi chơi Noel, ông già Noel muốn phát quà cho ít nhà nhất có thể để sớm hoàn thành xong công việc. Tuy nhiên, để đảm bảo chất lượng công việc không giảm sút, ông vẫn phải đảm bảo số quà phát cho mỗi nhà cần thoả mãn một số điều luật của tập đoàn Bắc Cực.
+
+Lần này, ông già Noel có `n` món quà, mỗi món có giá trị là `a_i`. Ông cần phát sao cho hiệu giữa giá trị nhỏ nhất và lớn nhất của các món quà phát cho 1 nhà không được vượt quá `k`, và số quà tối đa cho mỗi nhà không được vượt quá `d`.
+
+## Yêu cầu
+
+Hãy cho biết số lượng nhà được phát quà nhỏ nhất có thể là bao nhiêu.
+
+## Input
+
+- Dòng 1 chứa 3 số nguyên `n, k, d` (`1 ≤ n ≤ 10^5`, `0 ≤ k ≤ 10^9`, `1 ≤ d ≤ n`)
+- Dòng 2 chứa `n` số nguyên dương `a_1, a_2, ..., a_n` (`1 ≤ a_i ≤ 10^9`)
+
+## Output
+
+Một dòng duy nhất là kết quả bài toán.
+
+## Sample Input 1
+
+```text
+5 2 2
+3 6 1 2 5
+```
+
+## Sample Output 1
+
+```text
+3
+```

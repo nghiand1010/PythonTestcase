@@ -1,0 +1,45 @@
+# Bài 187: Lớp học mùa xuân
+
+## Đề bài
+
+Lớp học mùa xuân của giáo sư Padegras có `n` học sinh nam và nữ ghi tên.
+
+Giáo sư có tất cả học sinh xếp thành một hàng dọc và chọn một nhóm các học sinh liên tiếp nhau cho buổi học đầu tiên.
+
+Yêu cầu số học sinh nam và nữ trong nhóm được chọn phải bằng nhau.
+
+## Yêu cầu
+
+Hãy xác định giáo sư Padegras có bao nhiêu cách lựa chọn khác nhau cho buổi học đầu tiên.
+
+## Đầu vào
+
+- Dòng đầu chứa số nguyên `n`.
+- Dòng thứ hai chứa chuỗi độ dài `n`, chỉ gồm các ký tự:
+  - `a`: học sinh nam;
+  - `b`: học sinh nữ.
+
+## Ràng buộc
+
+```text
+1 ≤ n ≤ 10^6
+```
+
+## Đầu ra
+
+In ra một dòng chứa một số nguyên là số cách lựa chọn.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+7
+abbabaa
+```
+
+### Đầu ra
+
+```text
+13
+```

@@ -1,0 +1,103 @@
+# LỊCH SAO HỎA
+
+## Tên file
+
+```text
+MARS.PY
+```
+
+---
+
+## Bài toán
+
+Lịch Sao Hỏa quy ước như sau:
+
+- Một tuần có `9` ngày, từ `D1` đến `D9`.
+- Ngày `01/01/0001` là `D1`.
+- Năm nhuận khi:
+
+```text
+(Y % 2 == 0 and Y % 10 != 0) or (Y % 100 == 0)
+```
+
+- Năm nhuận có `669` ngày.
+- Năm thường có `668` ngày.
+- Tháng lẻ `1, 3, 5, 7, 9, 11` có `56` ngày.
+- Tháng chẵn `2, 4, 6, 8, 10` có `55` ngày.
+- Tháng `12` có:
+  - `57` ngày nếu là năm thường
+  - `58` ngày nếu là năm nhuận
+
+Cho ngày `d, m, y` trên Sao Hỏa, hãy tính xem đó là thứ mấy trong tuần, từ `D1` đến `D9`.
+
+---
+
+## Dữ liệu vào
+
+Ba số nguyên `d, m, y`.
+
+Điều kiện:
+
+```text
+1 <= y <= 10^9
+```
+
+Ngày tháng được đảm bảo hợp lệ.
+
+---
+
+## Kết quả
+
+In ra một số nguyên từ `1` đến `9`, tương ứng với thứ trong tuần:
+
+```text
+1: D1
+2: D2
+3: D3
+...
+9: D9
+```
+
+---
+
+## Ví dụ
+
+### Input
+
+```text
+1 1 2
+```
+
+### Output
+
+```text
+3
+```
+
+---
+
+## Giải thích ví dụ
+
+Năm `1` có `668` ngày.
+
+Ta có:
+
+```text
+668 mod 9 = 2
+```
+
+Vì ngày `01/01/0001` là `D1`, nên ngày `01/01/0002` tiến thêm `2` đơn vị:
+
+```text
+D1 -> D2 -> D3
+```
+
+Vậy ngày `01/01/0002` là `D3`.
+
+---
+
+## Ràng buộc
+
+```text
+100% test có y <= 10^9
+```

@@ -1,0 +1,59 @@
+# Bài 198: Thu gọn mảng
+
+## Đề bài
+
+Cho một dãy gồm `n` số nguyên:
+
+```text
+a[1], a[2], ..., a[n]
+```
+
+Trong một thao tác, bạn có thể chọn và xóa hai phần tử bất kỳ của dãy và chèn vào mảng một phần tử mới bằng tổng của hai phần tử đã xóa.
+
+Ví dụ: dãy `[4, 4]`, bạn có thể tạo ra một dãy mới `[8]` bằng một thao tác.
+
+## Yêu cầu
+
+Hãy tìm số phần tử tối đa có thể chia hết cho `3` trong mảng kết quả sau khi thực hiện một số lần tùy ý thao tác nói trên, có thể là `0` lần.
+
+Bạn phải trả lời `q` truy vấn độc lập.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `q` là số truy vấn.
+
+Tiếp theo là mô tả truy vấn, mỗi truy vấn gồm 2 dòng:
+
+- Dòng 1 chứa một số nguyên `n`;
+- Dòng 2 chứa `n` số nguyên `a[1], a[2], ..., a[n]`.
+
+## Ràng buộc
+
+```text
+1 ≤ q ≤ 1000
+1 ≤ n ≤ 100
+1 ≤ a[i] ≤ 10^9
+```
+
+## Đầu ra
+
+Chương trình cần in ra `q` dòng, dòng thứ `i` ghi kết quả của truy vấn thứ `i`, là một số nguyên cho biết số phần tử tối đa có thể chia hết cho `3` trong mảng kết quả sau khi thực hiện một số lần tùy ý thao tác được mô tả ở trên.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+5
+3 1 2 3 1
+7
+1 1 1 1 1 2 2
+```
+
+### Đầu ra
+
+```text
+3
+3
+```

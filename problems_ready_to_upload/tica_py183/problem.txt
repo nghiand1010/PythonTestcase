@@ -1,0 +1,58 @@
+# Bài 183: Vòng tròn bạn bè
+
+## Đề bài
+
+Trong một lớp học, mỗi học sinh được phân công kết bạn với một người khác. Quan hệ bạn bè được xem là quan hệ một chiều.
+
+Một vòng tròn bạn bè là một dãy các học sinh sao cho nếu bắt đầu từ một học sinh và lần lượt đi theo quan hệ được phân công, ta có thể quay lại chính học sinh ban đầu.
+
+## Yêu cầu
+
+Với một số cặp học sinh được hỏi, hãy kiểm tra xem hai học sinh đó có thuộc cùng một vòng tròn bạn bè hay không.
+
+Nếu có, hãy cho biết khoảng cách nhỏ nhất giữa hai học sinh trong vòng tròn đó theo chiều đi của quan hệ bạn bè.
+
+## Đầu vào
+
+- Dòng đầu chứa số nguyên `n`, là số học sinh.
+- `n` dòng tiếp theo, mỗi dòng chứa hai số nguyên `x`, `y`, cho biết học sinh `x` được phân công kết bạn với học sinh `y`.
+- Tiếp theo là một số dòng truy vấn, mỗi dòng chứa hai số nguyên `z`, `t`.
+- Dòng cuối cùng chứa hai số `0 0`, cho biết kết thúc dữ liệu vào.
+
+## Ràng buộc
+
+```text
+2 ≤ n ≤ 10^4
+1 ≤ x, y, z, t ≤ n
+```
+
+## Đầu ra
+
+Ứng với mỗi cặp `z, t`, in kết quả trên một dòng riêng:
+
+- Nếu hai học sinh không thuộc cùng một vòng tròn bạn bè, in ra `No`.
+- Nếu thuộc cùng một vòng tròn bạn bè, in ra `Yes` và một số nguyên mô tả khoảng cách nhỏ nhất giữa họ trong vòng tròn bạn bè.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+6
+1 2
+2 3
+3 1
+10 11
+100 10
+11 100
+1 100
+2 3
+0 0
+```
+
+### Đầu ra
+
+```text
+No
+Yes 0
+```

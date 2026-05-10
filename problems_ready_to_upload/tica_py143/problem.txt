@@ -1,0 +1,50 @@
+# Bài 143: Phần tử nhỏ thứ k trong dãy
+
+## Đề bài
+
+Cho dãy số nguyên `A[1], A[2], ..., A[N]`.
+
+Hãy tìm phần tử nhỏ thứ `K` trong dãy.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` cho biết số bộ dữ liệu cần kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N`;
+- Dòng thứ hai chứa `N` số nguyên cách nhau bởi dấu cách, là các phần tử của dãy;
+- Dòng thứ ba chứa số nguyên `K`.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ 100
+1 ≤ K ≤ N ≤ 5 × 10^4
+1 ≤ A[i] ≤ 10^5
+```
+
+## Đầu ra
+
+Ứng với mỗi bộ dữ liệu, in ra một dòng chứa kết quả của bài toán.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+6
+7 10 4 3 20 15
+3
+5
+7 10 4 20 15
+4
+```
+
+### Đầu ra
+
+```text
+7
+15
+```

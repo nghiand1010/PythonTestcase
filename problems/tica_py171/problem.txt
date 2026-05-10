@@ -1,0 +1,61 @@
+# Bài 171: Chơi game
+
+## Đề bài
+
+An và Bình đang chơi một trò chơi có `n` cấp độ. Tất nhiên, ai cũng muốn vượt qua tất cả các cấp độ của trò chơi.
+
+An chỉ có thể vượt qua một số cấp độ, Bình cũng chỉ có thể vượt qua một số cấp độ.
+
+Bạn được biết các chỉ số cấp độ mà An và Bình có thể vượt qua.
+
+## Yêu cầu
+
+Liệu khi An và Bình hợp tác cùng chơi, họ có thể vượt qua toàn bộ các cấp độ của trò chơi hay không?
+
+## Đầu vào
+
+- Dòng đầu chứa số nguyên `n`.
+- Dòng thứ hai chứa số nguyên `p`, theo sau là `p` số nguyên khác biệt `a1, a2, ..., ap`, biểu diễn các cấp độ An có thể vượt qua.
+- Dòng thứ ba chứa số nguyên `q`, theo sau là `q` số nguyên khác biệt `b1, b2, ..., bq`, biểu diễn các cấp độ Bình có thể vượt qua.
+
+## Ràng buộc
+
+```text
+1 ≤ n ≤ 100
+0 ≤ p, q
+ai, bj ≤ n
+```
+
+## Đầu ra
+
+Nếu An và Bình hợp tác cùng chơi mà có thể vượt qua tất cả các cấp độ của trò chơi, in ra `YES`. Ngược lại, in ra `NO`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+4
+3 1 2 3
+2 2 4
+```
+
+### Đầu ra
+
+```text
+YES
+```
+
+### Đầu vào
+
+```text
+4
+3 1 2 3
+2 2 3
+```
+
+### Đầu ra
+
+```text
+NO
+```

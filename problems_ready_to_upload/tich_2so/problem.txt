@@ -1,0 +1,60 @@
+# Tích lớn nhất của 2 số trong mảng
+
+---
+
+## Đề bài
+
+Cho một dãy số nguyên có `n` phần tử.  
+Tìm tích lớn nhất của 2 số trong mảng.
+
+---
+
+## Input
+
+Dòng đầu tiên là số lượng phần tử trong mảng `n`.
+
+```text
+1 ≤ n ≤ 10^6
+```
+
+Dòng thứ 2 là các phần tử `a_i` trong mảng.
+
+```text
+-10^9 ≤ a_i ≤ 10^9
+```
+
+---
+
+## Output
+
+In ra kết quả của bài toán.
+
+---
+
+## Ví dụ
+
+| Input | Output |
+|---|---|
+| `5`<br>`2 4 8 3 6` | `48` |
+
+---
+
+## Giải thích ví dụ
+
+Mảng ban đầu:
+
+```text
+2 4 8 3 6
+```
+
+Ta chọn 2 số có tích lớn nhất là:
+
+```text
+8 × 6 = 48
+```
+
+Vậy kết quả cần in ra là:
+
+```text
+48
+```

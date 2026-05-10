@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Editorial Solution for tica_py88
+Auto-generated from editorial.txt
+"""
+
+import sys
+from io import StringIO
+
+
+q = int(input())
+for _ in range(q):
+    x = int(input()) % 4
+    if x == 0:
+        print(1, 'A')
+    elif x == 1:
+        print(0, 'A')
+    elif x == 2:
+        print(1, 'B')
+    else:
+        print(2, 'A')

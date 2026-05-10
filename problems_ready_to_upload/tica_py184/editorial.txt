@@ -1,0 +1,8 @@
+```python
+n=int(input()); last={}; ans=0
+for _ in range(n):
+    c,s=map(int,input().split())
+    if c in last and last[c]!=s: ans+=1
+    last[c]=s
+print(ans)
+```

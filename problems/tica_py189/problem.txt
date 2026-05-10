@@ -1,0 +1,52 @@
+# Bài 189: Khoảng cách xa nhất
+
+## Đề bài
+
+Cho một dãy số nguyên `A` kích thước `N`.
+
+Tìm khoảng cách xa nhất giữa hai phần tử bằng nhau trong `A`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu kiểm tra.
+
+Mỗi bộ dữ liệu gồm:
+
+- Dòng đầu chứa số nguyên `N` là số phần tử của `A`;
+- Dòng sau chứa `N` số nguyên cách nhau bởi dấu cách biểu diễn dãy `A`.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 100
+0 < N ≤ 10^4
+0 < A[i] ≤ 10^4, i ≤ N
+```
+
+## Đầu ra
+
+In ra `T` dòng, mỗi dòng chứa một số nguyên là kết quả bài toán.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+6
+1 1 2 2 2 1
+12
+3 2 1 2 1 4 5 8 6 7 4 2
+```
+
+### Đầu ra
+
+```text
+5
+10
+```
+
+## Giải thích
+
+- Test 1: Hai phần tử `A[1]` và `A[6]` đều bằng `1`, cách nhau xa nhất với khoảng cách bằng `5`.
+- Test 2: Hai phần tử `A[2]` và `A[12]` đều bằng `2`, cách nhau xa nhất với khoảng cách bằng `10`.

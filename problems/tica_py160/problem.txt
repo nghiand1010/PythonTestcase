@@ -1,0 +1,64 @@
+# Bài 160: Độ lệch trong dãy
+
+## Đề bài
+
+Cho dãy `N` số nguyên và số nguyên `M`.
+
+Hãy tìm độ lệch giữa tổng lớn nhất và tổng nhỏ nhất của `(N - M)` số trong dãy.
+
+## Đầu vào
+
+Dòng đầu chứa số nguyên `T` là số bộ dữ liệu test.
+
+Mỗi bộ dữ liệu gồm 2 dòng:
+
+- Dòng thứ nhất chứa hai số nguyên `N`, `M`;
+- Dòng thứ hai chứa `N` số nguyên dương là các phần tử của dãy.
+
+## Ràng buộc
+
+```text
+1 ≤ T ≤ 10
+0 ≤ M < N ≤ 1000
+1 ≤ ai ≤ 1000, i = 1..N
+```
+
+## Đầu ra
+
+Với mỗi bộ dữ liệu test, in ra một dòng chứa độ lệch cực đại tìm được.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+1
+5 1
+2 3 5 4 1
+```
+
+### Đầu ra
+
+```text
+4
+```
+
+## Giải thích
+
+Tổng nhỏ nhất của `4` số là:
+
+```text
+1 + 2 + 3 + 4 = 10
+```
+
+Tổng lớn nhất của `4` số là:
+
+```text
+2 + 3 + 4 + 5 = 14
+```
+
+Độ lệch là:
+
+```text
+14 - 10 = 4
+```

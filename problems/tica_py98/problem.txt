@@ -1,0 +1,54 @@
+# Bài 98: Số Sphenic
+
+## Đề bài
+
+Số tự nhiên `N` được gọi là số Sphenic nếu `N` là tích của chính xác ba số nguyên tố khác nhau.
+
+Một vài số Sphenic đầu tiên là:
+
+```text
+30, 42, 66, 70, 78, 102, 105, 110, 114, ...
+```
+
+Cho một số `N`, nhiệm vụ của bạn là kiểm tra xem đó có phải là số Sphenic hay không.
+
+Ví dụ:
+
+- `N = 30 = 2 × 3 × 5` là số Sphenic;
+- `60 = 2^2 × 3 × 5` thì không phải, vì thừa số `2` có số mũ lớn hơn `1`.
+
+## Đầu vào
+
+Dòng đầu tiên chứa số nguyên `T` là số bộ dữ liệu vào kiểm tra.
+
+Mỗi bộ dữ liệu vào gồm một dòng chứa số nguyên dương `N`.
+
+## Ràng buộc
+
+```text
+0 < T ≤ 100
+0 < N ≤ 10^6
+```
+
+## Đầu ra
+
+In ra `T` dòng.
+
+Nếu số nguyên `N` từ đầu vào là số Sphenic thì in ra `1`, ngược lại thì in ra `0`.
+
+## Ví dụ
+
+### Đầu vào
+
+```text
+2
+30
+60
+```
+
+### Đầu ra
+
+```text
+1
+0
+```
