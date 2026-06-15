@@ -1,9 +1,0 @@
-```python
-x, y, z = map(int, input().split())
-a = (x + y) // z
-if x % z + y % z < z:
-    b = 0
-else:
-    b = min(z - x % z, z - y % z)
-print(a, b)
-```

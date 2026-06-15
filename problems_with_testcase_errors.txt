@@ -1,0 +1,12 @@
+Bài có lỗi testcase (file does not exist)
+======================================================================
+
+bdsochia2: Missing 1 input files
+  https://oj.tica.edu.vn/problem/bdsochia2/test_data
+
+sodep2: Missing 1 input files
+  https://oj.tica.edu.vn/problem/sodep2/test_data
+
+stickers: Missing 1 input files
+  https://oj.tica.edu.vn/problem/stickers/test_data
+

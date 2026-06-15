@@ -1,7 +1,31 @@
 {
     "chat.tools.terminal.autoApprove": {
         "mv": true,
-        "mkdir": true
+        "mkdir": true,
+        "Get-Process": true,
+        "Get-Terminal": true,
+        "Get-TerminalOutput": true,
+        "Get-Job": true,
+        "Receive-Job": true,
+        "Test-Path": true,
+        "Out-File": true,
+        "Get-Command": true,
+        "scripts\\wait_for_completion.ps1": true,
+        "Get-History": true,
+        "Get-CimInstance": true,
+        "/^\\$ready = Get-ChildItem \"d:\\\\Git\\\\PythonTestcase\\\\problems\" -Directory \\| Where-Object \\{ \n    \\(Test-Path \"\\$\\(\\$_\\.FullName\\)\\\\editorial\\.py\"\\) -and \n    \\(Test-Path \"\\$\\(\\$_\\.FullName\\)\\\\\\*_testcases\\.zip\"\\) \n\\} \\| Select-Object -ExpandProperty Name\n\nWrite-Host \"📊 Total bài có editorial \\+ ZIP: \\$\\(\\$ready\\.Count\\)\"\n\n# 91 bài đã upload lần trước\n\\$uploaded_old = @\\(\n    \"tica_py81\", \"tica_py82\", \"tica_py83\", \"tica_py84\", \"tica_py85\",\n    \"tica_py87\", \"tica_py88\", \"tica_py89\", \"tica_py90\", \"tica_py91\",\n    \"tica_py92\", \"tica_py93\", \"tica_py94\", \"tica_py95\", \"tica_py96\",\n    \"tica_py97\", \"tica_py98\", \"tica_py99\", \"tica_py100\", \"tica_py101\",\n    \"tica_py142\", \"tica_py143\", \"tica_py144\", \"tica_py145\", \"tica_py146\",\n    \"tica_py147\", \"tica_py148\", \"tica_py149\", \"tica_py150\", \"tica_py151\",\n    \"tica_py152\", \"tica_py153\", \"tica_py154\", \"tica_py155\", \"tica_py156\",\n    \"tica_py157\", \"tica_py158\", \"tica_py159\", \"tica_py160\", \"tica_py161\",\n    \"tica_py162\", \"tica_py163\", \"tica_py164\", \"tica_py165\", \"tica_py166\",\n    \"tica_py167\", \"tica_py168\", \"tica_py169\", \"tica_py170\", \"tica_py171\",\n    \"tica_py172\", \"tica_py173\", \"tica_py174\", \"tica_py175\", \"tica_py176\",\n    \"tica_py177\", \"tica_py178\", \"tica_py179\", \"tica_py180\", \"tica_py181\",\n    \"tica_py182\", \"tica_py183\", \"tica_py184\", \"tica_py185\", \"tica_py186\",\n    \"tica_py187\", \"tica_py188\", \"tica_py189\", \"tica_py190\", \"tica_py191\",\n    \"tica_py192\", \"tica_py193\", \"tica_py194\", \"tica_py195\", \"tica_py196\",\n    \"tica_py197\", \"tica_py198\", \"tica_py199\", \"tica_py200\",\n    \"min_taudien\", \"nguocdong_tg\", \"qua_noel\", \"sk_tongcheo2024\",\n    \"thietbi_daynui\", \"thu6_ngay13\", \"tich_2so\", \"tomau_nangcap\",\n    \"tongchux\", \"tongx_dbiet\", \"vienda\", \"xoayvong\"\n\\)\n\n# 17 bài mới vừa upload\n\\$uploaded_new = @\\(\n    \"bang_xoanvuong\", \"chanlek\", \"ckmn25_chiahet6\", \"ckmn25_dongho\",\n    \"ckmn25_dsconlac\", \"ckmn_xaudep\", \"cktq25_dso\", \"dso2cso\",\n    \"loinhuan_cophieu\", \"ngaystem\", \"sk26_bddayso\", \"sk26_bong3mau\",\n    \"sk26_dongho\", \"sk26_hvdacbiet\", \"sk26_hvxoanoc\", \"sk26_quanhau\", \"thoxemphim\"\n\\)\n\n\\$uploaded_all = \\$uploaded_old \\+ \\$uploaded_new\n\n# Tìm bài chưa upload\n\\$not_uploaded = \\$ready \\| Where-Object \\{ \\$uploaded_all -notcontains \\$_ \\}\n\nWrite-Host \"`n❌ Bài CHƯA upload: \\$\\(\\$not_uploaded\\.Count\\)\"\n\\$not_uploaded \\| Select-Object -First 30 \\| ForEach-Object \\{ Write-Host \"  - \\$_\" \\}$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "y": true,
+        "Set-Content": true,
+        "ForEach-Object": true,
+        "/^python upload_testcases\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "Expand-Archive": true,
+        "Get-Item": true
     },
     "git.ignoreLimitWarning": true
 }

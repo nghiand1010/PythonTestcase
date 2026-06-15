@@ -1,4 +1,0 @@
-Các con vẽ hình tròn tô màu sau. Hình tròn có bán kính = 50
-
-
-![](/martor/016fd790-2df8-48bf-85b6-1293c45a76a4.png)

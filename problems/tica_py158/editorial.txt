@@ -1,3 +1,0 @@
-```python
-n=int(input()); a=sorted(map(int,input().split())); b=sorted(map(int,input().split())); print('Yes' if all(x>y for x,y in zip(a,b)) else 'No')
-```

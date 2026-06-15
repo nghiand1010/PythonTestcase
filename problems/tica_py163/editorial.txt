@@ -1,4 +1,0 @@
-```python
-s=input().strip(); from collections import Counter; c=Counter(s)
-for ch in sorted(c): print(f'{ch}: {c[ch]}')
-```

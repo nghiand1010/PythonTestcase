@@ -19,14 +19,8 @@ build/
 *.swo
 
 # Testcase files - Don't commit large test data
-problems/*/input*.txt
-problems/*/output*.txt
-problems/*/test*.in
-problems/*/test*.out
-problems/*/*.in
-problems/*/*.out
-problems/*/*.ans
-problems/*_testcases.zip
+problems/
+problems_*/
 problems_ready_to_upload/
 
 # Temporary files

@@ -1,8 +1,0 @@
-# Unknown
-
-**URL:** https://oj.tica.edu.vn/problem/tica_git80
-
----
-
-![](/martor/353bab79-1949-4fce-87ce-0b4651d95a78.png)
-![](/martor/61f2f8b9-a335-4701-9d67-3f2f6dbb5119.png)

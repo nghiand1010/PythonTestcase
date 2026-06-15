@@ -1,5 +1,0 @@
-```python
-t=int(input())
-for _ in range(t):
-    n,x,a,b=map(int,input().split()); d=abs(a-b); print(min(n-1,d+x))
-```

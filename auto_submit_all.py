@@ -5,6 +5,7 @@ Auto-submit editorial.py vào TICA OJ cho 91 bài đã upload testcases
 
 from playwright.sync_api import sync_playwright
 import time
+import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.absolute()
@@ -107,15 +108,26 @@ def submit_code(page, problem_id, code, idx, total):
         return False, None
 
 def main():
-    print("="*70)
-    print("AUTO-SUBMIT 91 BÀI EDITORIAL LÊN TICA OJ")
-    print("="*70)
-    print(f"Total: {len(ALL_PROBLEMS)} bài\n")
+    # Check if command line arguments provided
+    if len(sys.argv) > 1:
+        # Use command line arguments
+        problems_to_submit = sys.argv[1:]
+        print("="*70)
+        print(f"AUTO-SUBMIT {len(problems_to_submit)} BÀI EDITORIAL LÊN TICA OJ")
+        print("="*70)
+        print(f"Total: {len(problems_to_submit)} bài (from arguments)\n")
+    else:
+        # Use hardcoded list
+        problems_to_submit = ALL_PROBLEMS
+        print("="*70)
+        print("AUTO-SUBMIT 91 BÀI EDITORIAL LÊN TICA OJ")
+        print("="*70)
+        print(f"Total: {len(ALL_PROBLEMS)} bài\n")
     
     # Check editorial files
     print("Checking editorial files...")
     missing = []
-    for problem_id in ALL_PROBLEMS:
+    for problem_id in problems_to_submit:
         code = read_editorial_code(problem_id)
         if code is None:
             missing.append(problem_id)
@@ -128,7 +140,7 @@ def main():
             print(f"  ... and {len(missing)-10} more")
         print()
     
-    valid_problems = [p for p in ALL_PROBLEMS if p not in missing]
+    valid_problems = [p for p in problems_to_submit if p not in missing]
     print(f"✅ Found {len(valid_problems)} valid editorial files\n")
     
     if not valid_problems:

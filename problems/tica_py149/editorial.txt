@@ -1,6 +1,0 @@
-```python
-def cnt(x,k): return str(x).count(str(k))
-q=int(input())
-for _ in range(q):
-    n,k=map(int,input().split()); a=list(map(int,input().split())); print(sum(cnt(x,k) for x in a))
-```
